@@ -12,8 +12,20 @@ This devlog documents the development journey of my personal portfolio website.
 It serves as a record of progress, challenges, and key decisions made throughout the project.  
 Along the way, I’ve noted what I’ve learned, what broke (and got fixed), and how the site evolved.
 
-**The goal:** to build a solid foundation in React and Tailwind, and to create a polished site that  
+### 🎯 The goal:
+
+To build a solid foundation in React and Tailwind, and to create a polished site that  
 represents my skills and growth as a developer.
+
+### 🥅 Development Goals:
+
+- Add admin page for personal use:
+  - `dev-duong.github.io/admin`
+    - Includes a button linking to an editable CV page (`/admin/edit-cv`)
+      - Save resume data locally (e.g., with `localStorage`)
+      - Automatically update a public resume page (`/cv`) with the latest edited content
+      - Public CV page includes a **Download as PDF** button for exporting the resume
+    - Includes a button for other personal uses
 
 ## 📅 April 23, 2025 — Project Kickoff
 
