@@ -43,3 +43,9 @@ represents my skills and growth as a developer.
 
 - How to build and deploy a ReactJS & Tailwind app on GitHub.
   - Each time the app is updated, it must be built and deployed again.
+
+## 📅 April 24, 2025 — Design
+
+### ✅ What I Did
+
+- Began designing website on Figma
