@@ -49,3 +49,18 @@ represents my skills and growth as a developer.
 ### ✅ What I Did
 
 - Began designing website on Figma
+
+## 📅 April 25, 2025 — Design
+
+### ✅ What I Did
+
+- Created initial Figma design for Home page
+- Added background component to the website
+- Added page components for each page
+- Cleaned up folder structure
+
+### 🧠 What I Learned
+
+- How I should organise the project
+- The structure I should be designing on Figma
+- Having a background image and overlay a colour in React
