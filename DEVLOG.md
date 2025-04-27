@@ -64,3 +64,20 @@ represents my skills and growth as a developer.
 - How I should organise the project
 - The structure I should be designing on Figma
 - Having a background image and overlay a colour in React
+
+## 📅 April 26, 2025 — Navbar & page linking
+
+### ✅ What I Did
+
+- Created basic navbar
+- linked buttons to page content
+
+### 🧠 What I Learned
+
+- I can show/hide content rather than create new pages
+
+## 📅 April 27, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Continued making designs
