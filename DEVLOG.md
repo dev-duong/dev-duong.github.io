@@ -74,7 +74,7 @@ represents my skills and growth as a developer.
 
 ### 🧠 What I Learned
 
-- I can show/hide content rather than create new pages
+- How to show/hide content rather than create new pages
 
 ## 📅 April 27, 2025 — Designing Continued
 
