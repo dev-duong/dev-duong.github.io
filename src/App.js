@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import VerticalCopyright from "./components/Copyright";
 
 function App() {
-  const [activePage, setActivePage] = useState("ABOUT");
+  const [activePage, setActivePage] = useState("HOME");
 
   const renderPage = () => {
     switch (activePage) {
@@ -33,7 +33,7 @@ function App() {
       <Background />
       <VerticalCopyright />
       <Navbar onNavClick={setActivePage} />
-      <main className="z-10 relative flex flex-col items-center justify-center h-screen space-y-6">
+      <main className="z-10 relative flex flex-col items-center justify-center h-screen pt-20 space-y-6">
         {renderPage()}
       </main>
     </div>
