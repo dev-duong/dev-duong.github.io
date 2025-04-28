@@ -86,4 +86,5 @@ represents my skills and growth as a developer.
 
 ### ✅ What I Did
 
-- Continued making designs
+- Fixed scrollbar
+  - I set the the navbar as an overlay
