@@ -1,29 +1,27 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const pages = [
-    { name: "HOME", path: "/" },
-    { name: "ABOUT", path: "/about" },
-    { name: "PROJECTS", path: "/projects" },
-    { name: "RESUME", path: "/resume" },
-    { name: "CONTACT", path: "/contact" },
-  ];
-
-  const location = useLocation();
+const Navbar = ({ onNavClick }) => {
+  const pages = ["HOME", "ABOUT", "PROJECTS", "RESUME", "CONTACT"];
 
   return (
-    <nav className="flex justify-end gap-x-4 p-4 fixed top-0 left-0 w-full z-20">
-      {pages.map((page) => (
-        <Link
-          key={page.name}
-          to={page.path}
-          className={`cursor-pointer ${
-            location.pathname === page.path ? "underline" : ""
-          }`}
-        >
-          {page.name}
-        </Link>
-      ))}
+    <nav className="flex justify-between items-center p-4 fixed top-0 left-0 w-full z-20">
+      {/* Left side: Branding */}
+      <Link to="/" className="text-xl font-bold">
+        dev.duong
+      </Link>
+
+      {/* Right side: Page Links */}
+      <div className="flex gap-x-4">
+        {pages.map((page) => (
+          <Link
+            key={page}
+            to={`/${page.toLowerCase()}`}
+            className="cursor-pointer"
+          >
+            {page}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 };

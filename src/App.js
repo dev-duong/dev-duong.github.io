@@ -22,7 +22,7 @@ function App() {
       <Navbar />
       <main className="z-10 relative flex flex-col items-center justify-center pt-20">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
