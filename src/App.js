@@ -32,8 +32,8 @@ function App() {
     <div className="relative min-h-screen overflow-hidden text-white font-mono">
       <Background />
       <VerticalCopyright />
-      <Navbar onNavClick={setActivePage} />
-      <main className="z-10 relative flex flex-col items-center justify-center h-screen pt-20 space-y-6">
+      <Navbar onNavClick={setActivePage} activePage={activePage} />
+      <main className="z-10 relative flex flex-col items-center justify-center h-screen space-y-6">
         {renderPage()}
       </main>
     </div>
