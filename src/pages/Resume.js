@@ -1,3 +1,4 @@
+// Resume.js
 const Resume = () => {
   return <div>Resume page</div>;
 };

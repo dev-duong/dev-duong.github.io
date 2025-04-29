@@ -1,40 +1,34 @@
-import { useState } from "react";
-import Background from "./components/Background";
-import Navbar from "./components/Navbar";
+// Library
+import { Routes, Route } from "react-router-dom";
+
+// Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
+
+// Components
+import Background from "./components/Background";
+import Navbar from "./components/Navbar";
 import VerticalCopyright from "./components/Copyright";
 
 function App() {
-  const [activePage, setActivePage] = useState("HOME");
-
-  const renderPage = () => {
-    switch (activePage) {
-      case "HOME":
-        return <Home />;
-      case "ABOUT":
-        return <About />;
-      case "PROJECTS":
-        return <Projects />;
-      case "RESUME":
-        return <Resume />;
-      case "CONTACT":
-        return <Contact />;
-      default:
-        return <Home />;
-    }
-  };
-
   return (
-    <div className="relative min-h-screen overflow-hidden text-white font-mono">
+    <div className="relative min-h-screen overflow-x-hidden text-white font-mono">
       <Background />
       <VerticalCopyright />
-      <Navbar onNavClick={setActivePage} activePage={activePage} />
-      <main className="z-10 relative flex flex-col items-center justify-center h-screen space-y-6">
-        {renderPage()}
+      <Navbar />
+      <main className="z-10 relative flex flex-col items-center justify-center pt-20">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
       </main>
     </div>
   );
