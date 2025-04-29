@@ -6,7 +6,7 @@ const Navbar = ({ onNavClick }) => {
   return (
     <nav className="flex justify-between items-center p-4 fixed top-0 left-0 w-full z-20">
       {/* Left side: Branding */}
-      <Link to="/" className="text-xl font-bold">
+      <Link to="/home" className="text-xl font-bold">
         dev.duong
       </Link>
 

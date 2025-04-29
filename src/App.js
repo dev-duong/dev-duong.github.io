@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
+import NotFound from "./pages/NotFound";
 
 // Components
 import Background from "./components/Background";
@@ -22,6 +23,11 @@ function App() {
       <Navbar />
       <main className="z-10 relative flex flex-col items-center justify-center pt-20">
         <Routes>
+          {/*Random Path Handling */}
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+
+          {/*Pages*/}
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
