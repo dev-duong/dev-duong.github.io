@@ -1,25 +1,33 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Navbar = ({ onNavClick }) => {
-  const pages = ["HOME", "ABOUT", "PROJECTS", "RESUME", "CONTACT"];
+const Navbar = () => {
+  const pages = [
+    { name: "HOME", path: "/" },
+    { name: "ABOUT", path: "/about" },
+    { name: "PROJECTS", path: "/projects" },
+    { name: "RESUME", path: "/resume" },
+    { name: "CONTACT", path: "/contact" },
+  ];
 
   return (
     <nav className="flex justify-between items-center p-4 fixed top-0 left-0 w-full z-20">
-      {/* Left side: Branding */}
-      <Link to="/home" className="text-xl font-bold">
-        dev.duong
-      </Link>
+      {/* Branding on the left */}
+      <div className="text-xl font-bold">
+        <NavLink to="/home">dev.duong</NavLink>
+      </div>
 
-      {/* Right side: Page Links */}
+      {/* Navigation links on the right */}
       <div className="flex gap-x-4">
         {pages.map((page) => (
-          <Link
-            key={page}
-            to={`/${page.toLowerCase()}`}
-            className="cursor-pointer"
+          <NavLink
+            key={page.name}
+            to={page.path}
+            className={({ isActive }) =>
+              `cursor-pointer ${isActive ? "underline" : ""}`
+            }
           >
-            {page}
-          </Link>
+            {page.name}
+          </NavLink>
         ))}
       </div>
     </nav>
