@@ -88,3 +88,19 @@ represents my skills and growth as a developer.
 
 - Fixed scrollbar
   - I set the the navbar as an overlay
+
+## 📅 April 29, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Changed single page show/hide content to react routes
+- Added a 404 page
+- Added Branding
+- Added underline on active nav link
+- Added small fixes
+
+### 🧠 What I Learned
+
+- The use of React routes vs single page content
+- Creating a 404 page
+- URL linking

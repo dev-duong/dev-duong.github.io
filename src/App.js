@@ -24,6 +24,7 @@ function App() {
       <main className="z-10 relative flex flex-col items-center justify-center pt-20">
         <Routes>
           {/*Random Path Handling */}
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
 
           {/*Pages*/}
