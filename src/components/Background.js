@@ -5,7 +5,7 @@ const Background = () => {
     <div className="absolute inset-0 -z-10">
       {/* Background image */}
       <div
-        className="w-full h-full bg-cover bg-center"
+        className="w-full h-full bg-repeat bg-center"
         style={{ backgroundImage: `url(${noise})` }}
       />
       {/* Overlay */}
