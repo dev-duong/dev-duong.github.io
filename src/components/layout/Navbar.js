@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-4 fixed top-0 left-0 w-full z-20">
+    <nav className="flex justify-between items-center fixed p-5 w-full z-20">
       {/* Branding on the left */}
       <div className="text-xl font-bold">
         <NavLink to="/home">dev.duong</NavLink>
