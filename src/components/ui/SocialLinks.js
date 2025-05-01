@@ -10,9 +10,9 @@ const SocialLinks = () => {
         href="https://github.com/dev-duong"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8"
+        className="w-7 h-7 transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
       >
-        <GitHub className="w-8 h-8" />
+        <GitHub className="w-7 h-7" />
       </a>
 
       {/* Linkedin Link */}
@@ -20,17 +20,19 @@ const SocialLinks = () => {
         href="https://www.linkedin.com/in/dat-tan-duong/"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8"
+        className="w-7 h-7 transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
       >
-        <Linkedin className="w-8 h-8" />
+        <Linkedin className="w-7 h-7" />
       </a>
 
       {/* Mail Link */}
       <a
         href="mailto:datduong.connect@gmail.com?subject=Your%20Subject&body=Hello%20there!"
-        className="w-8 h-8 cursor-pointer"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-7 h-7 transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
       >
-        <Mail className="w-8 h-8" />
+        <Mail className="w-7 h-7" />
       </a>
     </div>
   );
