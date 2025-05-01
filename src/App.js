@@ -11,9 +11,9 @@ import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 // Components
-import Background from "./components/Background";
-import Navbar from "./components/Navbar";
-import VerticalCopyright from "./components/Copyright";
+import Background from "./components/layout/Background";
+import Navbar from "./components/layout/Navbar";
+import VerticalCopyright from "./components/layout/Copyright";
 
 function App() {
   return (
