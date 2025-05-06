@@ -1,5 +1,5 @@
 // Library
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
 
 // Pages
 import Home from "./pages/Home";
@@ -28,7 +28,7 @@ function App() {
       <main className="z-10 relative flex flex-col items-center justify-center pt-20">
         <Routes>
           {/*Random Path Handling */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="*" element={<NotFound />} />
 
           {/*Pages*/}
