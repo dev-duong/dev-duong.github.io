@@ -15,9 +15,6 @@ import Background from "./components/layout/Background";
 import Navbar from "./components/layout/Navbar";
 import VerticalCopyright from "./components/layout/Copyright";
 
-// UI
-import SocialLinks from "./components/ui/SocialLinks";
-
 function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden text-white font-mono">
@@ -25,7 +22,7 @@ function App() {
       <VerticalCopyright />
       <Navbar />
 
-      <main className="z-10 relative flex flex-col items-center justify-center pt-20">
+      <main className="z-10 relative flex flex-col items-center justify-center">
         <Routes>
           {/*Random Path Handling */}
           <Route path="/" element={<Navigate to="/home" replace />} />
@@ -40,9 +37,6 @@ function App() {
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>
-      <footer>
-        <SocialLinks />
-      </footer>
     </div>
   );
 }

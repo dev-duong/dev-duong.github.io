@@ -1,18 +1,30 @@
+// Assets
 import { ReactComponent as GitHub } from "../../assets/github.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
 import { ReactComponent as Mail } from "../../assets/mail.svg";
 
-const SocialLinks = () => {
+// Sizes
+const sizeClasses = {
+  sm: "w-7 h-7",
+  lg: "w-14 h-14",
+};
+
+const SocialLinks = ({ size = "sm" }) => {
+  const iconSize = sizeClasses[size] || sizeClasses.md;
+
   return (
-    <div className="flex gap-4 fixed p-5 bottom-0 right-0">
+    <div className="flex gap-4 p-5">
       {/* GitHub Link */}
       <a
         href="https://github.com/dev-duong"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-7 h-7 transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+        className={
+          iconSize +
+          "transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+        }
       >
-        <GitHub className="w-7 h-7" />
+        <GitHub className={iconSize} />
       </a>
 
       {/* Linkedin Link */}
@@ -20,9 +32,12 @@ const SocialLinks = () => {
         href="https://www.linkedin.com/in/dat-tan-duong/"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-7 h-7 transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+        className={
+          iconSize +
+          "transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+        }
       >
-        <Linkedin className="w-7 h-7" />
+        <Linkedin className={iconSize} />
       </a>
 
       {/* Mail Link */}
@@ -30,9 +45,12 @@ const SocialLinks = () => {
         href="mailto:datduong.connect@gmail.com?subject=Your%20Subject&body=Hello%20there!"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-7 h-7 transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+        className={
+          iconSize +
+          "transition duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+        }
       >
-        <Mail className="w-7 h-7" />
+        <Mail className={iconSize} />
       </a>
     </div>
   );

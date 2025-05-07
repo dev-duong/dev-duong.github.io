@@ -1,6 +1,21 @@
-// Home.js
+// UI
+import SocialLinks from "../components/ui/SocialLinks";
+
+// Animations
+import PageWrapper from "../components/layout/PageWrapper";
+
+// Home Page
 const Home = () => {
-  return <div>Home Page</div>;
+  return (
+    <div className="pt-20 flex flex-col items-center">
+      <PageWrapper>
+        <div>Home Page</div>
+      </PageWrapper>
+      <footer className="fixed bottom-0 right-0">
+        <SocialLinks />
+      </footer>
+    </div>
+  );
 };
 
 export default Home;
