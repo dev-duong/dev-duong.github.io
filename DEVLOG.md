@@ -104,3 +104,30 @@ represents my skills and growth as a developer.
 - The use of React routes vs single page content
 - Creating a 404 page
 - URL linking
+
+## 📅 April 30, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Built a 404 page
+
+## 📅 May 1, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Added social media links
+- Updated background
+
+## 📅 May 6, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Small fixes in App.js
+
+## 📅 May 7, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Added page animations when opened
+- Added contact page to have socials in center
+- Removed Resume page and added to about page
