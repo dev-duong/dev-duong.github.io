@@ -17,9 +17,9 @@ const About = () => {
   const tools = ["vscode", "figma", "github"];
 
   return (
-    <main className="w-full sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 min-h-screen mx-auto flex flex-col justify-center">
+    <main className="pt-16 w-full sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 min-h-screen mx-auto flex flex-col justify-center">
       <PageWrapper>
-        <section className="flex justify-center items-center mb-5 gap-7">
+        <section className="flex lg:flex-row md:flex-col justify-center items-center mb-5 gap-7">
           <img src={Profile} alt="Portrait of Dat at college graduation" />
           <article className="flex flex-col gap-7">
             <Divider title="profile" />
