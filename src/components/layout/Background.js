@@ -9,7 +9,7 @@ const Background = () => {
         style={{ backgroundImage: `url(${noise})` }}
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#323232] opacity-95" />
+      <div className="absolute inset-0 bg-[#252525] opacity-95" />
     </div>
   );
 };
