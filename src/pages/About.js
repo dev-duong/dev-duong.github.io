@@ -1,5 +1,6 @@
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
+import TextBox from "../components/ui/TextBox";
 
 // Layout
 import Divider from "../components/layout/Divider";
@@ -13,8 +14,8 @@ import PageWrapper from "../components/layout/PageWrapper";
 
 const About = () => {
   // Add icons here, check devicon for names
-  const skills = ["react", "html5", "tailwindcss"];
-  const tools = ["vscode", "figma", "github"];
+  const skills = ["csharp", "css3", "python", "react", "html5", "tailwindcss"];
+  const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
     <main className="pt-16 w-full sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 min-h-screen mx-auto flex flex-col justify-center">
@@ -24,13 +25,10 @@ const About = () => {
           <article className="flex flex-col gap-7">
             <Divider title="profile" />
             <p className="text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I'm a Computer Science graduate with a passion for UX/UI design
+              and front-end development. I specialize in crafting intuitive,
+              responsive web and mobile experiences using HTML, CSS, React.js,
+              and Tailwind.
             </p>
           </article>
         </section>
@@ -39,31 +37,54 @@ const About = () => {
           <Divider title="experience" />
 
           <article className="flex gap-7">
-            <h3 className="whitespace-nowrap text-gray-400">
-              Mar 2023 - Oct 2023
-            </h3>
+            <div className="flex flex-col gap-3">
+              <h3 className="whitespace-nowrap text-gray-400">
+                Mar 2023 - Oct 2023
+              </h3>
+              <div className="flex flex-row gap-2">
+                <TextBox
+                  text="HTML"
+                  bgColor="bg-blue-400"
+                  textColor="text-black"
+                />
+
+                <TextBox
+                  text="REACT"
+                  bgColor="bg-blue-400"
+                  textColor="text-black"
+                />
+                <TextBox
+                  text="TAILWIND"
+                  bgColor="bg-blue-400"
+                  textColor="text-black"
+                />
+              </div>
+            </div>
             <div className="flex flex-col gap-3">
               <h3 className="whitespace-nowrap">
                 TechnologyOne | Fortitude Valley, QLD
               </h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                As a Lead UX/UI Designer and Consultant, I collaborated on
+                front-end development using HTML, CSS, React.js, and Tailwind. I
+                facilitated client discussions and promoted team collaboration
+                to deliver both mobile and web applications.
               </p>
             </div>
           </article>
 
           <article className="flex gap-7">
-            <h3 className="whitespace-nowrap text-gray-400">27 Mar 2024</h3>
+            <div className="flex flex-col gap-3">
+              <h3 className="whitespace-nowrap text-gray-400">
+                Mar 2024 - Mar 2024
+              </h3>
+            </div>
             <div className="flex flex-col gap-3">
               <h3 className="whitespace-nowrap">IKEA | North Lakes, QLD</h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Supported the installation and replacement of Cisco network
+                switchboards, ensuring precise cable management and seamless
+                team coordination.
               </p>
             </div>
           </article>
@@ -77,7 +98,7 @@ const About = () => {
             </h3>
             <div className="flex flex-col gap-3">
               <h3 className="whitespace-nowrap">
-                Queensland University of Queensland | Brisbane, QLD
+                Queensland University of Technology | Brisbane, QLD
               </h3>
               <p className="text-gray-400">
                 Bachelor's of Information Technology (Computer Science)
@@ -88,20 +109,32 @@ const About = () => {
 
         <section className="flex flex-col mb-8 gap-7">
           <Divider title="skills" />
-          <article className="flex">
+          <article className="flex justify-center">
             <Icons icons={skills} />
           </article>
         </section>
 
         <section className="flex flex-col mb-8 gap-7">
           <Divider title="tools" />
-          <article className="flex">
+          <article className="flex justify-center">
             <Icons icons={tools} />
           </article>
         </section>
 
-        <section className="mb-8">
+        <section className="flex flex-col mb-8 gap-7">
           <Divider title="other info" />
+          <article className="flex gap-7">
+            <h3 className="whitespace-nowrap">CERTIFICATIONS</h3>
+            <div className="flex flex-col gap-3">
+              <p className="text-gray-400">
+                Australian Open "O" Class Driver's Licence
+              </p>
+              <p className="text-gray-400">Forklift License (LF)</p>
+              <p className="text-gray-400">
+                Responsible Service of Alcohol (RSA)
+              </p>
+            </div>
+          </article>
         </section>
       </PageWrapper>
 
