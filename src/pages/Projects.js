@@ -12,7 +12,9 @@ const Projects = () => {
         <div>Project Page</div>
       </PageWrapper>
       <footer className="fixed bottom-0 right-0">
-        <SocialLinks />
+        <PageWrapper>
+          <SocialLinks />
+        </PageWrapper>
       </footer>
     </main>
   );

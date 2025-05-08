@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <main className="h-screen flex flex-col items-center justify-center text-center">
       <PageWrapper>
-        <div className="text-2xl">Contact Page</div>
+        <h1 className="text-2xl">Contact Page</h1>
         <SocialLinks size="lg" />
       </PageWrapper>
     </main>
