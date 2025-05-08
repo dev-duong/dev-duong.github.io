@@ -1,6 +1,9 @@
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
 
+// Layout
+import Divider from "../components/layout/Divider";
+
 // Assets
 import Profile from "../assets/profile.png";
 import Icons from "../components/ui/Icons";
@@ -9,35 +12,78 @@ import Icons from "../components/ui/Icons";
 import PageWrapper from "../components/layout/PageWrapper";
 
 const About = () => {
+  // Add icons here, check devicon for names
   const skills = ["react", "html5", "tailwindcss"];
   const tools = ["vscode", "figma", "github"];
 
   return (
-    <main className="flex flex-col items-center justify-center w-full md:w-1/2 min-h-screen mx-auto">
+    <main className="w-1/3 min-h-screen mx-auto flex flex-col justify-center">
       <PageWrapper>
-        <section className="flex mb-8">
+        <section className="flex justify-center items-center mb-8 gap-5">
           <img src={Profile} alt="Dat at Graduation" />
           <article>
-            <h2 className="text-2xl">Hi I'm Dat</h2>
-            <p></p>
+            <Divider title="profile" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </article>
         </section>
+
+        <section className="flex flex-col mb-7 gap-7">
+          <Divider title="experience" />
+
+          <article className="flex gap-7">
+            <h3 className="whitespace-nowrap">Date - Date</h3>
+            <div className="flex flex-col gap-3">
+              <h3 className="whitespace-nowrap">Company | location</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.{" "}
+              </p>
+            </div>
+          </article>
+
+          <article className="flex gap-7">
+            <h3 className="whitespace-nowrap">Date - Date</h3>
+            <div className="flex flex-col gap-3">
+              <h3 className="whitespace-nowrap">Company | location</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.{" "}
+              </p>
+            </div>
+          </article>
+        </section>
+
         <section className="mb-8">
-          <h1 className="text-2xl">Skills</h1>
+          <Divider title="skills" />
           <article className="flex">
             <Icons icons={skills} />
           </article>
         </section>
+
         <section className="mb-8">
-          <h1 className="text-2xl">Tools</h1>
+          <Divider title="tools" />
           <article className="flex">
             <Icons icons={tools} />
           </article>
         </section>
+
         <section className="mb-8">
-          <h1 className="text-2xl">Other Info</h1>
+          <Divider title="other info" />
         </section>
       </PageWrapper>
+
       <footer className="fixed bottom-0 right-0">
         <PageWrapper>
           <SocialLinks />

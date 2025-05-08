@@ -131,3 +131,11 @@ represents my skills and growth as a developer.
 - Added page animations when opened
 - Added contact page to have socials in center
 - Removed Resume page and added to about page
+
+## 📅 May 8, 2025 — Designing Continued
+
+### ✅ What I Did
+
+- Added devicon for icons
+- Added profile picture
+- Added about page structure
