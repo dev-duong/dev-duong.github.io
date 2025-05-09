@@ -1,5 +1,6 @@
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
+import ProjectCard from "../components/ui/ProjectCard";
 
 // Layout
 import Divider from "../components/layout/Divider";
