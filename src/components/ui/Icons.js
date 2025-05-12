@@ -6,14 +6,19 @@ const Icons = ({ icons }) => {
       {icons.map((icon, idx) => (
         <div
           key={idx}
-          className="group relative w-16 h-16 rounded-xl flex items-center justify-center shadow bg-gray-600 hover:bg-gray-700 transition-colors"
+          className="group relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16 
+             rounded-xl flex items-center justify-center 
+             p-1 sm:p-2 md:p-3 
+             shadow bg-gray-600 hover:bg-gray-700 transition-colors"
         >
           <i
-            className={`devicon-${icon}-plain colored text-4xl text-white`}
+            className={`devicon-${icon}-plain colored 
+                text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+                text-white`}
           ></i>
 
           {/* Tooltip */}
-          <span className="absolute bottom-full mb-2 px-2 py-1 text-xs rounded bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+          <span className="absolute bottom-full mb-2 px-2 py-1 text-xs sm:text-xs lg:text-xs rounded bg-black text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
             {icon.toUpperCase()}
           </span>
         </div>

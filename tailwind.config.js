@@ -4,7 +4,17 @@ const autoprefixer = require("autoprefixer");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        // Default sizes
+        base: "16px",
+        lg: "18px",
+
+        // Custom sizes for mobile and other breakpoints
+        sm: "12px",
+        xl: "18px",
+      },
+    },
   },
   plugins: [autoprefixer],
 };
