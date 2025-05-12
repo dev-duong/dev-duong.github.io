@@ -13,9 +13,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center fixed p-4 w-full z-20 text-white transition-all duration-300 ${
-        menuOpen ? "bg-[#252525] bg-opacity-90 backdrop-blur" : ""
-      }`}
+      className={`flex justify-between items-center fixed p-5 w-full z-20 text-white transition-all duration-300
+    bg-gradient-to-b from-[#252525] to-transparent
+    ${menuOpen ? "bg-opacity-90 backdrop-blur" : ""}
+  `}
     >
       {/* Branding on the left */}
       <div className="text-xl font-bold">
@@ -31,11 +32,16 @@ const Navbar = () => {
 
       {/* Navigation links */}
       <div
-        className={`flex gap-x-4 ${
+        className={`flex gap-x-4 transition-all duration-300 ${
           menuOpen
-            ? "flex-col absolute top-16 left-0 w-full px-5 py-3 bg-[#252525] bg-opacity-90 backdrop-blur"
+            ? "flex-col absolute top-16 left-0 w-full px-5 py-3 bg-opacity-90 backdrop-blur"
             : "hidden"
         } sm:flex sm:static sm:flex-row sm:gap-x-4`}
+        style={{
+          background: menuOpen
+            ? "linear-gradient(to bottom, #1a1a1a 85%, transparent 100%)" // Extended gradient with #1a1a1a
+            : "",
+        }}
       >
         {pages.map((page) => (
           <NavLink

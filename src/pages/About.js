@@ -17,7 +17,7 @@ const About = () => {
   const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
-    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto min-h-screen flex flex-col justify-center">
+    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto min-h-screen flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         {/* Profile Section */}
         <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left">
@@ -139,7 +139,10 @@ const About = () => {
       </PageWrapper>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 right-0">
+      <footer
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full p-5
+               md:static md:bottom-auto md:left-auto md:translate-x-0 md:justify-end md:items-end md:fixed md:right-0 md:bottom-0"
+      >
         <PageWrapper>
           <SocialLinks />
         </PageWrapper>
