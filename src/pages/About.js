@@ -140,8 +140,8 @@ const About = () => {
 
       {/* Footer */}
       <footer
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full p-5
-               md:static md:bottom-auto md:left-auto md:translate-x-0 md:justify-end md:items-end md:fixed md:right-0 md:bottom-0"
+        className="absolute md:fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full
+             md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-0"
       >
         <PageWrapper>
           <SocialLinks />

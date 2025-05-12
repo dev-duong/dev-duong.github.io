@@ -1,6 +1,6 @@
 const Divider = ({ title }) => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-10">
       <span className="uppercase text-2xl whitespace-nowrap">{title}</span>
       <div
         className="flex-grow border-t-[2px]"

@@ -18,7 +18,10 @@ const Home = () => {
           Go back Home
         </a>
       </PageWrapper>
-      <footer className="fixed bottom-0 right-0">
+      <footer
+        className="absolute md:fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full
+             md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-0"
+      >
         <PageWrapper>
           <SocialLinks />
         </PageWrapper>
