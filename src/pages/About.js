@@ -17,7 +17,7 @@ const About = () => {
   const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
-    <main className="pt-16 px-4 w-full sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-1/3 min-h-screen mx-auto flex flex-col justify-center">
+    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto min-h-screen flex flex-col justify-center">
       <PageWrapper>
         {/* Profile Section */}
         <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left">
@@ -43,7 +43,7 @@ const About = () => {
 
           {/* TechOne Experience */}
           <article className="flex flex-col sm:flex-row gap-5">
-            <div className="flex flex-col gap-3 min-w-[150px]">
+            <div className="flex flex-col gap-3 min-w-[175px]">
               <h3 className="text-gray-400">Mar 2023 - Oct 2023</h3>
               <div className="flex flex-wrap gap-2">
                 <TextBox
@@ -76,7 +76,7 @@ const About = () => {
 
           {/* IKEA Experience */}
           <article className="flex flex-col sm:flex-row gap-5">
-            <div className="flex flex-col gap-3 min-w-[150px]">
+            <div className="flex flex-col gap-3 min-w-[175px]">
               <h3 className="text-gray-400">Mar 2024 - Mar 2024</h3>
             </div>
             <div className="flex flex-col gap-3">
@@ -94,7 +94,7 @@ const About = () => {
         <section className="flex flex-col mb-8 gap-7">
           <Divider title="education" />
           <article className="flex flex-col sm:flex-row gap-5">
-            <h3 className="text-gray-400 min-w-[150px]">Feb 2020 - Nov 2024</h3>
+            <h3 className="text-gray-400 min-w-[175px]">Feb 2020 - Nov 2024</h3>
             <div className="flex flex-col gap-3">
               <h3>Queensland University of Technology | Brisbane, QLD</h3>
               <p className="text-gray-400">
