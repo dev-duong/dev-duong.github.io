@@ -16,26 +16,20 @@ const Home = () => {
           </div>
         </div>
       </PageWrapper>
-      <footer className="fixed bottom-0">
-        <div className="flex text-center w-full">
+      <footer className="fixed bottom-0 w-full">
+        <div className="flex flex-col items-center px-4 py-2 text-center">
           <PageWrapper>
-            <p className="mb-3 text-center text-sm">
-              Designed using <strong className="text-myOrange">Figma</strong>{" "}
-              and coded in{" "}
-              <strong className="text-myOrange">Visual Studio Code</strong> by
-              me. <br />
-              Built using <strong className="text-myOrange">
-                ReactJS
-              </strong> and{" "}
-              <strong className="text-myOrange">TailwindCSS</strong>, deployed
-              using <strong className="text-myOrange">GitHub Pages</strong>.
+            <p className="text-sm mb-2 md:mb-0 text-center md:text-center md:w-full p-5">
+              Designed using <strong>Figma</strong> and coded in{" "}
+              <strong>Visual Studio Code</strong> by me.{" "}
+              <br className="hidden md:block" />
+              Built using <strong>ReactJS</strong> and{" "}
+              <strong>TailwindCSS</strong>, deployed using{" "}
+              <strong>GitHub Pages</strong>.
             </p>
           </PageWrapper>
 
-          <div
-            className="absolute md:fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full
-             md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-0"
-          >
+          <div className="md:absolute md:bottom-2 md:right-4">
             <PageWrapper>
               <SocialLinks />
             </PageWrapper>
