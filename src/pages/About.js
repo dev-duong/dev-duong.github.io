@@ -75,24 +75,26 @@ const About = () => {
         </section>
 
         {/* Skills Section */}
-        <section className="flex flex-col mb-8 gap-7">
-          <Divider title="skills" />
-          <article className="flex justify-center">
-            <div className="w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center">
-              <Icons icons={skills} />
-            </div>
-          </article>
-        </section>
+        <div className="flex justify-between">
+          <section className="flex flex-col mb-8 gap-7">
+            <Divider title="skills" />
+            <article className="flex justify-center">
+              <div className="w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center">
+                <Icons icons={skills} />
+              </div>
+            </article>
+          </section>
 
-        {/* Tools Section */}
-        <section className="flex flex-col mb-8 gap-7">
-          <Divider title="tools" />
-          <article className="flex justify-center">
-            <div className="w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center">
-              <Icons icons={tools} />
-            </div>
-          </article>
-        </section>
+          {/* Tools Section */}
+          <section className="flex flex-col mb-8 gap-7">
+            <Divider title="tools" />
+            <article className="flex justify-center">
+              <div className="w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center">
+                <Icons icons={tools} />
+              </div>
+            </article>
+          </section>
+        </div>
 
         {/* Certifications Section */}
         <section className="flex flex-col mb-8 gap-7">
