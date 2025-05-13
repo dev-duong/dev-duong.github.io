@@ -75,7 +75,7 @@ const About = () => {
         </section>
 
         {/* Skills Section */}
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-7">
           <section className="flex flex-col mb-8 gap-7">
             <Divider title="skills" />
             <article className="flex justify-center">

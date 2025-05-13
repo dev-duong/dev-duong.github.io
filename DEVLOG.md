@@ -82,14 +82,14 @@ represents my skills and growth as a developer.
 
 - Continued making designs
 
-## 📅 April 28, 2025 — Designing Continued
+## 📅 April 28, 2025 — Scrollbar
 
 ### ✅ What I Did
 
 - Fixed scrollbar
   - I set the the navbar as an overlay
 
-## 📅 April 29, 2025 — Designing Continued
+## 📅 April 29, 2025 — Added react router
 
 ### ✅ What I Did
 
@@ -105,26 +105,26 @@ represents my skills and growth as a developer.
 - Creating a 404 page
 - URL linking
 
-## 📅 April 30, 2025 — Designing Continued
+## 📅 April 30, 2025 — built 404 page
 
 ### ✅ What I Did
 
 - Built a 404 page
 
-## 📅 May 1, 2025 — Designing Continued
+## 📅 May 1, 2025 — Added Socials
 
 ### ✅ What I Did
 
 - Added social media links
 - Updated background
 
-## 📅 May 6, 2025 — Designing Continued
+## 📅 May 6, 2025 — Fixes
 
 ### ✅ What I Did
 
 - Small fixes in App.js
 
-## 📅 May 7, 2025 — Designing Continued
+## 📅 May 7, 2025 — Site Structure
 
 ### ✅ What I Did
 
@@ -132,10 +132,30 @@ represents my skills and growth as a developer.
 - Added contact page to have socials in center
 - Removed Resume page and added to about page
 
-## 📅 May 8, 2025 — Designing Continued
+## 📅 May 8, 2025 — Icons and About Page
 
 ### ✅ What I Did
 
 - Added devicon for icons
 - Added profile picture
 - Added about page structure
+
+## 📅 May 9, 2025 — Began Project Page
+
+### ✅ What I Did
+
+- Added basic project page structure
+
+## 📅 May 11, 2025 — About Page Mobile Fixes
+
+## 📅 May 12, 2025 — More Mobile Fixes
+
+## 📅 May 13, 2025 — Home, Project, and Further Fixes
+
+### ✅ What I Did
+
+- Added Home page content
+- Replaced about content with component versions
+- Removed then added scroll bar back
+- Added project page content
+- put tools and skills in same div in about page
