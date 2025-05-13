@@ -76,7 +76,7 @@ const About = () => {
 
         {/* Skills Section */}
         <div className="flex justify-between gap-7">
-          <section className="flex flex-col mb-8 gap-7">
+          <section className="flex flex-col mb-8 gap-7 w-full">
             <Divider title="skills" />
             <article className="flex justify-center">
               <div className="w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center">
@@ -86,7 +86,7 @@ const About = () => {
           </section>
 
           {/* Tools Section */}
-          <section className="flex flex-col mb-8 gap-7">
+          <section className="flex flex-col mb-8 gap-4 w-full">
             <Divider title="tools" />
             <article className="flex justify-center">
               <div className="w-full max-w-xs sm:max-w-md md:max-w-lg flex justify-center">
