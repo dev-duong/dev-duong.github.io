@@ -17,7 +17,7 @@ const About = () => {
   const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
-    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
+    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0 overflow-y-scroll scrollbar-hidden h-screen">
       <PageWrapper>
         {/* Profile Section */}
         <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-8 rounded-2xl">
@@ -110,8 +110,8 @@ const About = () => {
 
       {/* Footer */}
       <footer
-        className="absolute md:fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full
-             md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-0"
+        className="absolute md:fixed bottom-2 left-1/2 -translate-x-1/2 flex justify-center w-full
+             md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-4"
       >
         <PageWrapper>
           <SocialLinks />
