@@ -1,6 +1,7 @@
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
 import TextBox from "../components/ui/TextBox";
+import ExperienceCard from "../components/ui/ExperienceCard";
 
 // Layout
 import Divider from "../components/layout/Divider";
@@ -20,7 +21,7 @@ const About = () => {
     <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto min-h-screen flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         {/* Profile Section */}
-        <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left">
+        <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-8 rounded-2xl">
           <img
             src={Profile}
             alt="Portrait of Dat at college graduation"
@@ -42,66 +43,36 @@ const About = () => {
           <Divider title="experience" />
 
           {/* TechOne Experience */}
-          <article className="flex flex-col sm:flex-row gap-5">
-            <div className="flex flex-col gap-3 min-w-[175px]">
-              <h3 className="text-gray-400">Mar 2023 - Oct 2023</h3>
-              <div className="flex flex-wrap gap-2">
-                <TextBox
-                  text="HTML"
-                  bgColor="bg-blue-400"
-                  textColor="text-black"
-                />
-                <TextBox
-                  text="REACT"
-                  bgColor="bg-blue-400"
-                  textColor="text-black"
-                />
-                <TextBox
-                  text="TAILWIND"
-                  bgColor="bg-blue-400"
-                  textColor="text-black"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h3>TechnologyOne | Fortitude Valley, QLD</h3>
-              <p className="text-gray-400">
-                As a Lead UX/UI Designer and Consultant, I collaborated on
-                front-end development using HTML, CSS, React.js, and Tailwind. I
-                facilitated client discussions and promoted team collaboration
-                to deliver both mobile and web applications.
-              </p>
-            </div>
-          </article>
+          <ExperienceCard
+            date="Mar 2023 - Oct 2023"
+            skills={["HTML", "REACT", "TAILWIND"]}
+            company="TechnologyOne"
+            location="Fortitude Valley, QLD"
+            description="As a Lead UX/UI Designer and Consultant, I collaborated on front-end development using HTML, CSS, React.js, and Tailwind. I facilitated client discussions and promoted team collaboration to deliver both mobile and web applications."
+          />
 
           {/* IKEA Experience */}
-          <article className="flex flex-col sm:flex-row gap-5">
-            <div className="flex flex-col gap-3 min-w-[175px]">
-              <h3 className="text-gray-400">Mar 2024 - Mar 2024</h3>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h3>IKEA | North Lakes, QLD</h3>
-              <p className="text-gray-400">
-                Supported the installation and replacement of Cisco network
+          <ExperienceCard
+            date="Mar 2024 - Mar 2024"
+            skills={[]}
+            company="IKEA"
+            location="North Lakes, QLD"
+            description="Supported the installation and replacement of Cisco network
                 switchboards, ensuring precise cable management and seamless
-                team coordination.
-              </p>
-            </div>
-          </article>
+                team coordination."
+          />
         </section>
 
         {/* Education Section */}
         <section className="flex flex-col mb-8 gap-7">
           <Divider title="education" />
-          <article className="flex flex-col sm:flex-row gap-5">
-            <h3 className="text-gray-400 min-w-[175px]">Feb 2020 - Nov 2024</h3>
-            <div className="flex flex-col gap-3">
-              <h3>Queensland University of Technology | Brisbane, QLD</h3>
-              <p className="text-gray-400">
-                Bachelor's of Information Technology (Computer Science)
-              </p>
-            </div>
-          </article>
+          <ExperienceCard
+            date="Feb 2020 - Nov 2024"
+            skills={[]}
+            company="Queensland University of Technology"
+            location="Brisbane, QLD"
+            description="Bachelor's of Information Technology (Computer Science)"
+          />
         </section>
 
         {/* Skills Section */}
@@ -127,7 +98,7 @@ const About = () => {
         {/* Certifications Section */}
         <section className="flex flex-col mb-8 gap-7">
           <Divider title="other info" />
-          <article className="flex flex-col sm:flex-row gap-7">
+          <article className="flex flex-col sm:flex-row gap-7 bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-4 rounded-2xl">
             <h3>CERTIFICATIONS</h3>
             <div className="flex flex-col gap-3 text-gray-400">
               <p>Australian Open "O" Class Driver's Licence</p>
