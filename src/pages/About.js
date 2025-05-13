@@ -1,6 +1,5 @@
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
-import TextBox from "../components/ui/TextBox";
 import ExperienceCard from "../components/ui/ExperienceCard";
 
 // Layout
@@ -18,7 +17,7 @@ const About = () => {
   const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
-    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto min-h-screen flex flex-col justify-center flex-grow pb-20 md:pb-0">
+    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         {/* Profile Section */}
         <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-8 rounded-2xl">
@@ -67,7 +66,7 @@ const About = () => {
         <section className="flex flex-col mb-8 gap-7">
           <Divider title="education" />
           <ExperienceCard
-            date="Feb 2020 - Nov 2024"
+            date="Feb 2020 - June 2024"
             skills={[]}
             company="Queensland University of Technology"
             location="Brisbane, QLD"

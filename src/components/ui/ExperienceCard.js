@@ -12,7 +12,7 @@ const ExperienceCard = ({ date, skills, company, location, description }) => {
             <TextBox
               key={index}
               text={skill}
-              bgColor="bg-blue-400"
+              bgColor="bg-myOrange"
               textColor="text-black"
             />
           ))}

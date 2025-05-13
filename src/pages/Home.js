@@ -11,7 +11,7 @@ const Home = () => {
       <PageWrapper>
         <div className="h-[calc(100vh-80px)] mt-[-80px] flex items-center justify-center">
           <div className="flex flex-col text-center">
-            <h1 className="text-6xl">Dat Duong</h1>
+            <h1 className="text-6xl font-bold">Dat Duong</h1>
             <h2 className="text-4xl text-myOrange">UI/UX DESIGNER</h2>
           </div>
         </div>
@@ -19,7 +19,7 @@ const Home = () => {
       <footer className="fixed bottom-0 w-full">
         <div className="flex flex-col items-center px-4 py-2 text-center">
           <PageWrapper>
-            <p className="text-sm mb-2 md:mb-0 text-center md:text-center md:w-full p-5">
+            <p className="text-sm mb-2 md:mb-0 text-center md:text-center md:w-full p-4">
               Designed using <strong>Figma</strong> and coded in{" "}
               <strong>Visual Studio Code</strong> by me.{" "}
               <br className="hidden md:block" />

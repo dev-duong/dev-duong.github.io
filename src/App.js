@@ -16,7 +16,7 @@ import VerticalCopyright from "./components/layout/Copyright";
 
 function App() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden text-white font-mono">
+    <div className="relative min-h-screen overflow-x-hidden max-w-full text-white">
       <Background />
       <VerticalCopyright />
       <Navbar />
