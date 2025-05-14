@@ -11,7 +11,7 @@ import PageWrapper from "../components/layout/PageWrapper";
 // Project Page
 const Projects = () => {
   return (
-    <main className="pt-20 flex flex-col items-center">
+    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         <section>
           <article className="flex flex-col gap-7">
