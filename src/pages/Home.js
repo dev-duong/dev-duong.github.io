@@ -17,7 +17,7 @@ const Home = () => {
           </div>
         </div>
       </PageWrapper>
-      <footer className="fixed bottom-0 w-full">
+      <footer className="fixed inset-x-0 bottom-0 w-full">
         <div className="flex flex-col items-center px-4 py-2 text-center">
           <PageWrapper>
             <p className="text-sm mb-2 md:mb-0 text-center md:text-center md:w-full p-4">
