@@ -153,10 +153,9 @@ const Projects = () => {
     : allProjects;
 
   return (
-    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
+    <main className="p-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         <section>
-          <h2 className="text-2xl font-bold mb-4">Projects</h2>
           <CategoryFilter
             categories={categories}
             selected={selectedCategory}
