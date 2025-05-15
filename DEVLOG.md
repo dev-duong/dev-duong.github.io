@@ -158,4 +158,22 @@ represents my skills and growth as a developer.
 - Replaced about content with component versions
 - Removed then added scroll bar back
 - Added project page content
+- Added placeholder projects sorted by year
 - put tools and skills in same div in about page
+
+## 📅 May 14, 2025 — Added Projects
+
+### ✅ What I Did
+
+- Added some of my projects from GitHub
+
+## 📅 May 15, 2025 — More Projects and Scrollbar
+
+### ✅ What I Did
+
+- Added Typewriter animmation to home page
+- Footer placement issues
+- Added UI/UX projects
+- Added internal scrollbar and project category filter
+- Added internal scrollbar to about page
+- Category filter alphabetically sorted
