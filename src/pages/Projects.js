@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
@@ -180,9 +181,21 @@ const Projects = () => {
             className="flex flex-col gap-7 mb-10 pr-4 overflow-y-auto custom-scrollbar"
             style={{ maxHeight: "70vh" }} // or choose height based on your layout
           >
-            {filteredProjects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={selectedCategory || "all"}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-col gap-7 mb-10 pr-4 overflow-y-auto custom-scrollbar"
+                style={{ maxHeight: "70vh" }}
+              >
+                {filteredProjects.map((project) => (
+                  <ProjectCard key={project.title} {...project} />
+                ))}
+              </motion.div>
+            </AnimatePresence>
           </article>
         </section>
       </PageWrapper>
