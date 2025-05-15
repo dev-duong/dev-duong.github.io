@@ -8,6 +8,15 @@ import Divider from "../components/layout/Divider";
 // Animations
 import PageWrapper from "../components/layout/PageWrapper";
 
+// Project PDFs
+import RealWorldJournal from "../assets/Projects/RealWorldJournal.pdf";
+import MoreThanHuman from "../assets/Projects/MoreThanHuman.pdf";
+import CarbonDrone from "../assets/Projects/CarbonDrone.pdf";
+import CarbonDroneStatement from "../assets/Projects/CarbonDroneStatement.pdf";
+import MushroomFont from "../assets/Projects/MushroomFont.pdf";
+import MushroomFontStatement from "../assets/Projects/MushroomFontStatement.pdf";
+import MushroomLog from "../assets/Projects/MushroomLog.otf";
+
 // Project Page
 const Projects = () => {
   return (
@@ -15,7 +24,7 @@ const Projects = () => {
       <PageWrapper>
         <section>
           <article className="flex flex-col gap-7 mb-10">
-            <Divider title="2025" />
+            <Divider title="Web Development" />
             <ProjectCard
               title="Portfolio Website V2"
               description="A modern, multi-page, and responsive portfolio website built with React and Tailwind CSS."
@@ -28,21 +37,38 @@ const Projects = () => {
               ]}
               link="https://github.com/dev-duong/dev-duong.github.io"
             />
+            <ProjectCard
+              title="Portfolio Website V1"
+              description="A Static portfolio website built using HTML and CSS [No longer Live]."
+              tags={["HTML", "CSS", "GitHub Pages"]}
+              link="https://github.com/dev-duong/v1-dev-duong.github.io"
+            />
+            <ProjectCard
+              title="Web-Calculator"
+              description="A web-based calculator built using HTML, CSS, and JavaScript, providing basic arithmetic functionality with a user-friendly interface."
+              tags={["HTML", "CSS", "JavaScript"]}
+              link="https://github.com/dev-duong/Web-Calculator"
+            />
+            <ProjectCard
+              title="Portfolio Website [Mobile-Only]"
+              description="A website portfolio built using HTML, and CSS. [Built for only mobile]"
+              tags={["HTML", "CSS"]}
+              link="https://github.com/dev-duong/Mobile-Website-Portfolio"
+            />
+            <ProjectCard
+              title="Responsive Travel Website"
+              description="A Static portfolio website built using HTML and CSS adhering to the requirements of Web Content Accessibility Guidelines (WCAG)"
+              tags={["HTML", "CSS"]}
+              link="https://github.com/dev-duong/Resposive-Travel-Website"
+            />
 
+            <Divider title="Games" />
             <ProjectCard
               title="FirstQuest"
               description="A C# Console text based game."
               tags={["C#"]}
               link="https://github.com/dev-duong/firstQuest"
             />
-
-            <ProjectCard
-              title="Saving Calculator"
-              description="An interactive tool that helps users estimate how much they can split their income by percentage."
-              tags={["C#"]}
-              link="https://github.com/dev-duong/savingsCalculator"
-            />
-
             <ProjectCard
               title="Catch Game"
               description="A simple basket catch game built in Unity."
@@ -50,34 +76,67 @@ const Projects = () => {
               link="https://github.com/dev-duong/CatchGame"
             />
 
-            <Divider title="2024" />
+            <Divider title="Utility" />
             <ProjectCard
-              title="Portfolio Website V1"
-              description="A Static portfolio website built using HTML and CSS [No longer Live]."
-              tags={["HTML", "CSS", "GitHub Pages"]}
-              link="https://github.com/dev-duong/v1-dev-duong.github.io"
+              title="Saving Calculator"
+              description="An interactive tool that helps users estimate how much they can split their income by percentage."
+              tags={["C#"]}
+              link="https://github.com/dev-duong/savingsCalculator"
             />
 
+            <Divider title="UI/UX Design" />
             <ProjectCard
-              title="Web-Calculator"
-              description="A web-based calculator built using HTML, CSS, and JavaScript, providing basic arithmetic functionality with a user-friendly interface."
-              tags={["HTML", "CSS", "JavaScript"]}
-              link="https://github.com/dev-duong/Web-Calculator"
+              title="Real World Journal"
+              description="A logo Design for a fictional journal company called Real World Jounral."
+              tags={["Adobe inDesign", "Adobe Illustrator"]}
+              link={RealWorldJournal}
+              type="pdf"
             />
-
-            <Divider title="2021" />
             <ProjectCard
-              title="Portfolio Website [Mobile-Only]"
-              description="A website portfolio built using HTML, and CSS. [Built for only mobile]"
-              tags={["HTML", "CSS"]}
-              link="https://github.com/dev-duong/Mobile-Website-Portfolio"
+              title="More Than Human"
+              description="A critical experience concept design. Includes contextual research, world building, and designs."
+              tags={["Adobe inDesign", "Adobe Photoshop"]}
+              link={MoreThanHuman}
+              type="pdf"
             />
-
             <ProjectCard
-              title="Responsive Travel Website"
-              description="A Static portfolio website built using HTML and CSS adhering to the requirements of Web Content Accessibility Guidelines (WCAG)"
-              tags={["HTML", "CSS"]}
-              link="https://github.com/dev-duong/Resposive-Travel-Website"
+              title="Carbon Drone"
+              description="A critical experience and speculative concept design magazine and statement."
+              tags={["Adobe inDesign", "Adobe Photoshop"]}
+              link={[
+                {
+                  url: CarbonDrone,
+                  type: "pdf",
+                },
+                {
+                  url: CarbonDroneStatement,
+                  type: "pdf",
+                },
+              ]}
+              linkLabel={["Open Magazine PDF →", "Open Statement PDF →"]}
+            />
+            <ProjectCard
+              title="Mushroom Font"
+              description="A custom mushroom themed font."
+              tags={["Adobe inDesign", "Adobe Illustrator"]}
+              link={[
+                {
+                  url: MushroomFont,
+                  type: "pdf",
+                },
+                {
+                  url: MushroomFontStatement,
+                  type: "pdf",
+                },
+                {
+                  url: MushroomLog,
+                },
+              ]}
+              linkLabel={[
+                "Open Magazine PDF →",
+                "Open Statement PDF →",
+                "Download Font →",
+              ]}
             />
           </article>
         </section>
