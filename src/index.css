@@ -9,3 +9,26 @@
     @apply font-inter;
   }
 }
+
+/* Scrollbar Track */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2d2d2d; /* track color */
+  border-radius: 4px;
+}
+
+/* Scrollbar Thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e39e58; /* Tailwind orange-500 */
+  border-radius: 4px;
+  border: 2px solid #2d2d2d; /* space around thumb */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #e39e58 #2d2d2d;
+}
