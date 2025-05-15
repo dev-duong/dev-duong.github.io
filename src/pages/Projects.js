@@ -89,7 +89,7 @@ const allProjects = [
     category: "Games",
     title: "Catch Game",
     description: "A simple basket catch game built in Unity.",
-    tags: ["C#", "HLSL", "ShaderLab"],
+    tags: ["C#", "HLSL", "ShaderLab", "Unity"],
     link: "https://github.com/dev-duong/CatchGame",
     type: "github",
   },
