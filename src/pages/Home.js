@@ -1,5 +1,6 @@
 // UI
 import SocialLinks from "../components/ui/SocialLinks";
+import Typewriter from "../components/ui/Typewrite";
 
 // Animations
 import PageWrapper from "../components/layout/PageWrapper";
@@ -7,12 +8,12 @@ import PageWrapper from "../components/layout/PageWrapper";
 // Home Page
 const Home = () => {
   return (
-    <main className="pt-20 flex flex-col items-center">
+    <main className="pt-16 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         <div className="h-[calc(100vh-80px)] mt-[-80px] flex items-center justify-center">
-          <div className="flex flex-col text-center">
+          <div className="flex flex-col text-center gap-4">
             <h1 className="text-6xl font-bold">Dat Duong</h1>
-            <h2 className="text-4xl text-myOrange">UI/UX DESIGNER</h2>
+            <Typewriter words={["UI/UX Designer", "Front-End Developer"]} />
           </div>
         </div>
       </PageWrapper>
