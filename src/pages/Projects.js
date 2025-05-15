@@ -19,6 +19,7 @@ import MushroomLog from "../assets/Projects/MushroomLog.otf";
 
 // All Projects
 const allProjects = [
+  // Portfolio V2
   {
     category: "Web Development",
     title: "Portfolio Website V2",
@@ -34,6 +35,7 @@ const allProjects = [
     link: "https://github.com/dev-duong/dev-duong.github.io",
     type: "github",
   },
+  // Portfolio V1
   {
     category: "Web Development",
     title: "Portfolio Website V1",
@@ -43,6 +45,7 @@ const allProjects = [
     link: "https://github.com/dev-duong/v1-dev-duong.github.io",
     type: "github",
   },
+  // Web Calculator
   {
     category: "Web Development",
     title: "Web-Calculator",
@@ -52,6 +55,7 @@ const allProjects = [
     link: "https://github.com/dev-duong/Web-Calculator",
     type: "github",
   },
+  // Portfolio [Mobile]
   {
     category: "Web Development",
     title: "Portfolio Website [Mobile-Only]",
@@ -61,6 +65,7 @@ const allProjects = [
     link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
     type: "github",
   },
+  // Travel Site
   {
     category: "Web Development",
     title: "Responsive Travel Website",
@@ -70,14 +75,16 @@ const allProjects = [
     link: "https://github.com/dev-duong/Resposive-Travel-Website",
     type: "github",
   },
+  // First Quest
   {
     category: "Games",
-    title: "FirstQuest",
+    title: "First Quest",
     description: "A C# Console text based game.",
     tags: ["C#"],
     link: "https://github.com/dev-duong/firstQuest",
     type: "github",
   },
+  // Catch Game
   {
     category: "Games",
     title: "Catch Game",
@@ -86,6 +93,7 @@ const allProjects = [
     link: "https://github.com/dev-duong/CatchGame",
     type: "github",
   },
+  // Savings Calculator
   {
     category: "Utility",
     title: "Saving Calculator",
@@ -95,6 +103,7 @@ const allProjects = [
     link: "https://github.com/dev-duong/savingsCalculator",
     type: "github",
   },
+  // Real World Journal
   {
     category: "UI/UX Design",
     title: "Real World Journal",
@@ -104,6 +113,7 @@ const allProjects = [
     link: RealWorldJournal,
     type: "pdf",
   },
+  // More Than Human
   {
     category: "UI/UX Design",
     title: "More Than Human",
@@ -113,6 +123,7 @@ const allProjects = [
     link: MoreThanHuman,
     type: "pdf",
   },
+  // Carbon Drone
   {
     category: "UI/UX Design",
     title: "Carbon Drone",
@@ -125,6 +136,7 @@ const allProjects = [
     ],
     linkLabel: ["Open Magazine PDF →", "Open Statement PDF →"],
   },
+  // Mushroom Font
   {
     category: "UI/UX Design",
     title: "Mushroom Font",
