@@ -21,7 +21,7 @@ const About = () => {
       <PageWrapper>
         {/* Profile Section */}
         <div
-          className="custom-scrollbar"
+          className="pr-4 custom-scrollbar"
           style={{ maxHeight: "80vh", overflowY: "auto" }}
         >
           <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-8 rounded-2xl">
