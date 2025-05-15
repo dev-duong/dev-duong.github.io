@@ -160,9 +160,11 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const categories = [...new Set(allProjects.map((p) => p.category))];
-  const filteredProjects = selectedCategory
-    ? allProjects.filter((p) => p.category === selectedCategory)
-    : allProjects;
+  const filteredProjects = (
+    selectedCategory
+      ? allProjects.filter((p) => p.category === selectedCategory)
+      : allProjects
+  ).sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically by title
 
   return (
     <main className="p-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">

@@ -1,7 +1,7 @@
 const CategoryFilter = ({ categories, selected, onSelect }) => {
   return (
     <div className="flex flex-wrap gap-3 mb-8 justify-center">
-      {["All", ...categories].map((category) => (
+      {["All", ...categories.sort()].map((category) => (
         <button
           key={category}
           className={`px-4 py-1 rounded-full border transition-colors duration-300 ease-in-out
