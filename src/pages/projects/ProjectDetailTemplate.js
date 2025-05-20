@@ -12,9 +12,9 @@ const ProjectDetailTemplate = ({ project }) => {
         <strong>Category:</strong> {project.category}
       </div>
 
-      <div className="mb-6">
-        <strong>Tags:</strong>{" "}
-        <div className="flex flex-wrap gap-2 mb-6">
+      <div className="flex items-center gap-4 my-6">
+        <strong className="whitespace-nowrap">Tags:</strong>
+        <div className="flex flex-wrap gap-2">
           {project.tags?.map((tag) => (
             <TextBox
               key={tag}

@@ -1,5 +1,5 @@
-// src/data/projectsData.js
 const projectsData = [
+  // Portfolio V2
   {
     slug: "portfolio-website-v2",
     category: "Web Development",
