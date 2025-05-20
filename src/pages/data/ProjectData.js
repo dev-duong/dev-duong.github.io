@@ -4,6 +4,7 @@ const projectsData = [
     slug: "portfolio-website-v2",
     category: "Web Development",
     title: "Portfolio Website V2",
+    year: "2025",
     description:
       "A modern, multi-page, and responsive portfolio website built with React and Tailwind CSS.",
     tags: [

@@ -1,3 +1,6 @@
+import TextBox from "../../components/ui/TextBox";
+import { getDefaultLabel } from "../../components/ui/LinkHelper";
+
 const ProjectDetailTemplate = ({ project }) => {
   return (
     <>
@@ -11,38 +14,43 @@ const ProjectDetailTemplate = ({ project }) => {
 
       <div className="mb-6">
         <strong>Tags:</strong>{" "}
-        {project.tags?.map((tag) => (
-          <span
-            key={tag}
-            className="inline-block bg-gray-200 text-gray-700 px-2 py-1 mr-2 rounded"
-          >
-            {tag}
-          </span>
-        ))}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {project.tags?.map((tag) => (
+            <TextBox
+              key={tag}
+              text={tag}
+              bgColor="bg-myOrange"
+              textColor="text-black"
+            />
+          ))}
+        </div>
       </div>
 
       {project.link && (
         <div>
           {Array.isArray(project.link) ? (
             project.link.map((linkItem, i) => (
+              // Handles array of links
               <a
                 key={i}
                 href={linkItem.url || linkItem}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 underline mr-4"
+                className="text-myOrange mr-4"
               >
-                {project.linkLabel?.[i] || "View Link"}
+                {project.linkLabel?.[i] ||
+                  getDefaultLabel(linkItem.type || project.type)}
               </a>
             ))
           ) : (
+            // Handles individual link
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 underline"
+              className="text-myOrange"
             >
-              View Project
+              {project.linkLabel || getDefaultLabel(project.type)}
             </a>
           )}
         </div>
