@@ -1,12 +1,11 @@
 import TextBox from "../../components/ui/TextBox";
 import { getDefaultLabel } from "../../components/ui/LinkHelper";
+import PageWrapper from "../../components/layout/PageWrapper";
 
 const ProjectDetailTemplate = ({ project }) => {
   return (
-    <>
+    <PageWrapper>
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-
-      <p className="mb-6">{project.description}</p>
 
       <div className="mb-6">
         <strong>Category:</strong> {project.category}
@@ -26,7 +25,11 @@ const ProjectDetailTemplate = ({ project }) => {
         </div>
       </div>
 
-      {project.link && (
+      <p className="mb-6">{project.summary}</p>
+      <p className="mb-6">{project.summary}</p>
+      <p className="mb-6">{project.summary}</p>
+
+      {project.link && ( // Link to github etc
         <div>
           {Array.isArray(project.link) ? (
             project.link.map((linkItem, i) => (
@@ -55,7 +58,7 @@ const ProjectDetailTemplate = ({ project }) => {
           )}
         </div>
       )}
-    </>
+    </PageWrapper>
   );
 };
 
