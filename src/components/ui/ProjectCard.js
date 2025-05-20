@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
 import TextBox from "../ui/TextBox";
 
 const ProjectCard = ({
+  slug,
   title,
   description,
   tags,
   link,
-  type = "github",
+  type,
   linkLabel,
 }) => {
   // Helper to get link label per type
@@ -29,8 +31,6 @@ const ProjectCard = ({
     : [];
 
   // Normalize linkLabel to array for easier mapping
-  // If linkLabel is a single string, repeat it for all links
-  // If not provided, use default label per link type
   const labels = (() => {
     if (!linkLabel) return links.map(({ type }) => getDefaultLabel(type));
     if (typeof linkLabel === "string") return links.map(() => linkLabel);
@@ -43,39 +43,46 @@ const ProjectCard = ({
   })();
 
   return (
-    <article className="flex flex-col sm:flex-row gap-5 bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-4 rounded-2xl">
-      <div className="flex flex-col justify-between gap-3 flex-1">
-        <div>
-          <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-gray-400">{description}</p>
-        </div>
+    <Link to={`/projects/${slug}`} className="block">
+      <article className="flex flex-col sm:flex-row gap-5 bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-4 rounded-2xl cursor-pointer">
+        <div className="flex flex-col justify-between gap-3 flex-1">
+          <div>
+            <Link to={`/projects/${slug}`}>
+              <h3 className="text-xl font-semibold hover:text-myOrange transition">
+                {title}
+              </h3>
+            </Link>
+            <p className="text-gray-400">{description}</p>
+          </div>
 
-        <div className="flex flex-wrap gap-2 mt-2">
-          {tags.map((tag, index) => (
-            <TextBox
-              key={index}
-              text={tag}
-              bgColor="bg-myOrange"
-              textColor="text-black"
-            />
-          ))}
-        </div>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {tags.map((tag, index) => (
+              <TextBox
+                key={index}
+                text={tag}
+                bgColor="bg-myOrange"
+                textColor="text-black"
+              />
+            ))}
+          </div>
 
-        <div className="mt-2 flex flex-col gap-1">
-          {links.map(({ url }, index) => (
-            <a
-              key={index}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-myOrange hover:underline"
-            >
-              {labels[index]}
-            </a>
-          ))}
+          <div className="mt-2 flex flex-col gap-1">
+            {links.map(({ url }, index) => (
+              <a
+                key={index}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-myOrange hover:underline"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {labels[index]}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </Link>
   );
 };
 
