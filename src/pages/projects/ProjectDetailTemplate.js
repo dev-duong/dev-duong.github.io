@@ -3,10 +3,15 @@
 import TextBox from "../../components/ui/TextBox";
 import { getDefaultLabel } from "../../components/ui/LinkHelper";
 import PageWrapper from "../../components/layout/PageWrapper";
+import Divider from "../../components/layout/Divider";
 
 const ProjectDetailTemplate = ({ project }) => {
   return (
     <PageWrapper>
+              <div
+          className="pr-4 custom-scrollbar"
+          style={{ maxHeight: "70vh", overflowY: "auto" }}
+        >
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
 
       <div className="mb-6">
@@ -14,7 +19,8 @@ const ProjectDetailTemplate = ({ project }) => {
       </div>
 
       <div className="flex items-center gap-4 my-6">
-        <strong className="whitespace-nowrap">Tech Stack:</strong>
+        <strong className="whitespace-nowrap self-start">Tech Stack:</strong>
+        
         <div className="flex flex-wrap gap-2">
           {project.techStack?.map((techStack) => (
             <TextBox
@@ -27,12 +33,23 @@ const ProjectDetailTemplate = ({ project }) => {
         </div>
       </div>
 
-      <p className="mb-6">{project.summary}</p>
-      <p className="mb-6">{project.motivation}</p>
-      <p className="mb-6">{project.features}</p>
+      <div className="flex flex-col gap-6">
+        <Divider title="Summary"/>
+        <p className="text-justify">{project.summary}</p>
+        <Divider title="Motivation"/>
+        <p className="text-justify">{project.motivation}</p>
+        <Divider title="Features"/>
+        <ul className="list-disc list-inside space-y-1">
+    {project.features.map((feature, index) => (
+      <li key={index}>{feature}</li>
+    ))}
+  </ul>
+      </div>
+      </div>
+
 
       {project.link && ( // Link to github etc
-        <div>
+        <div className="my-6">
           {Array.isArray(project.link) ? (
             project.link.map((linkItem, i) => (
               // Handles array of links
@@ -60,6 +77,7 @@ const ProjectDetailTemplate = ({ project }) => {
           )}
         </div>
       )}
+      
     </PageWrapper>
   );
 };

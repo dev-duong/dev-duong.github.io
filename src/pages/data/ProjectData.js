@@ -17,26 +17,32 @@ const projectsData = [
     ],
     link: "https://github.com/dev-duong/dev-duong.github.io",
     type: "github",
-    summary: `Summary ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.`,  
 
-    motivation: `Motivation ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    summary: `This website is designed to showcase my creative work through a clean and 
+    responsive interface. Built with React.js and Tailwind CSS, it features a modern design 
+    with smooth animations, interactive components, and an organized layout that allows users 
+    to explore projects by category. The site emphasizes clarity and usability, ensuring 
+    visitors can easily navigate through my portfolio. Framer Motion enhances the user 
+    experience with engaging animations, while React Router enables seamless transitions 
+    between different sections.`,  
 
-    features: `Features ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    motivation: `I wanted to build this portfolio website as a way to challenge myself
+    and grow both my design and development skills. It serves as a platform to showcase my
+    projects, refine my technical abilities, and demonstrate my understanding of modern web
+    development tools like React.js, Tailwind CSS, Framer Motion, and React Router. My goal
+    was to prepare for future opportunities by demonstrating not only my technical skills, 
+    but how I think about design and user experience as well as learn.`,
+
+    features: [
+      "Fully responsive design for desktop, tablet, and mobile",
+      "Built with React.js and styled using Tailwind CSS",
+      "Smooth page transitions and animations using Framer Motion",
+      "Route-based navigation using React Router",
+      "Category-based project filtering with dynamic rendering",
+      "Custom reusable components (e.g. buttons, text boxes)",
+      "Downloadable project assets and PDF resumes",
+      "Organized folder structure and maintainable codebase"
+    ],
 
   },
   // Portfolio V1
