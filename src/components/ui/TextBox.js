@@ -1,6 +1,3 @@
-// src/components/TextBox.js
-import React from "react";
-
 const TextBox = ({ text, bgColor, textColor }) => {
   return (
     <div

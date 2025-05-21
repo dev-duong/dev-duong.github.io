@@ -1,3 +1,5 @@
+// This is a template component for displaying project details.
+
 import TextBox from "../../components/ui/TextBox";
 import { getDefaultLabel } from "../../components/ui/LinkHelper";
 import PageWrapper from "../../components/layout/PageWrapper";
@@ -12,12 +14,12 @@ const ProjectDetailTemplate = ({ project }) => {
       </div>
 
       <div className="flex items-center gap-4 my-6">
-        <strong className="whitespace-nowrap">Tags:</strong>
+        <strong className="whitespace-nowrap">Tech Stack:</strong>
         <div className="flex flex-wrap gap-2">
-          {project.tags?.map((tag) => (
+          {project.techStack?.map((techStack) => (
             <TextBox
-              key={tag}
-              text={tag}
+              key={techStack}
+              text={techStack}
               bgColor="bg-myOrange"
               textColor="text-black"
             />
@@ -26,8 +28,8 @@ const ProjectDetailTemplate = ({ project }) => {
       </div>
 
       <p className="mb-6">{project.summary}</p>
-      <p className="mb-6">{project.summary}</p>
-      <p className="mb-6">{project.summary}</p>
+      <p className="mb-6">{project.motivation}</p>
+      <p className="mb-6">{project.features}</p>
 
       {project.link && ( // Link to github etc
         <div>

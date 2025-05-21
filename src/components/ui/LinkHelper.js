@@ -1,4 +1,3 @@
-// src/utils/linkHelpers.js
 export const getDefaultLabel = (type) => {
   return (
     {

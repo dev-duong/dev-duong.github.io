@@ -30,7 +30,7 @@ const allProjects = [
   //   title: "Portfolio Website V1",
   //   description:
   //     "A Static portfolio website built using HTML and CSS [No longer Live].",
-  //   tags: ["HTML", "CSS", "GitHub Pages"],
+  //   techStack: ["HTML", "CSS", "GitHub Pages"],
   //   link: "https://github.com/dev-duong/v1-dev-duong.github.io",
   //   type: "github",
   // },
@@ -40,7 +40,7 @@ const allProjects = [
   //   title: "Web-Calculator",
   //   description:
   //     "A web-based calculator built using HTML, CSS, and JavaScript, providing basic arithmetic functionality with a user-friendly interface.",
-  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   techStack: ["HTML", "CSS", "JavaScript"],
   //   link: "https://github.com/dev-duong/Web-Calculator",
   //   type: "github",
   // },
@@ -50,7 +50,7 @@ const allProjects = [
   //   title: "Portfolio Website [Mobile-Only]",
   //   description:
   //     "A website portfolio built using HTML, and CSS. [Built for only mobile]",
-  //   tags: ["HTML", "CSS"],
+  //   techStack: ["HTML", "CSS"],
   //   link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
   //   type: "github",
   // },
@@ -60,7 +60,7 @@ const allProjects = [
   //   title: "Responsive Travel Website",
   //   description:
   //     "A Static portfolio website built using HTML and CSS adhering to the requirements of Web Content Accessibility Guidelines (WCAG)",
-  //   tags: ["HTML", "CSS"],
+  //   techStack: ["HTML", "CSS"],
   //   link: "https://github.com/dev-duong/Resposive-Travel-Website",
   //   type: "github",
   // },
@@ -69,7 +69,7 @@ const allProjects = [
   //   category: "Games",
   //   title: "First Quest",
   //   description: "A C# Console text based game.",
-  //   tags: ["C#"],
+  //   techStack: ["C#"],
   //   link: "https://github.com/dev-duong/firstQuest",
   //   type: "github",
   // },
@@ -78,7 +78,7 @@ const allProjects = [
   //   category: "Games",
   //   title: "Catch Game",
   //   description: "A simple basket catch game built in Unity.",
-  //   tags: ["C#", "HLSL", "ShaderLab", "Unity"],
+  //   techStack: ["C#", "HLSL", "ShaderLab", "Unity"],
   //   link: "https://github.com/dev-duong/CatchGame",
   //   type: "github",
   // },
@@ -88,7 +88,7 @@ const allProjects = [
   //   title: "Saving Calculator",
   //   description:
   //     "An interactive tool that helps users estimate how much they can split their income by percentage.",
-  //   tags: ["C#"],
+  //   techStack: ["C#"],
   //   link: "https://github.com/dev-duong/savingsCalculator",
   //   type: "github",
   // },
@@ -98,7 +98,7 @@ const allProjects = [
   //   title: "Real World Journal",
   //   description:
   //     "A logo Design for a fictional journal company called Real World Jounral.",
-  //   tags: ["Adobe inDesign", "Adobe Illustrator"],
+  //   techStack: ["Adobe inDesign", "Adobe Illustrator"],
   //   link: RealWorldJournal,
   //   type: "pdf",
   // },
@@ -108,7 +108,7 @@ const allProjects = [
   //   title: "More Than Human",
   //   description:
   //     "A critical experience concept design. Includes contextual research, world building, and designs.",
-  //   tags: ["Adobe inDesign", "Adobe Photoshop"],
+  //   techStack: ["Adobe inDesign", "Adobe Photoshop"],
   //   link: MoreThanHuman,
   //   type: "pdf",
   // },
@@ -118,7 +118,7 @@ const allProjects = [
   //   title: "Carbon Drone",
   //   description:
   //     "A critical experience and speculative concept design magazine and statement.",
-  //   tags: ["Adobe inDesign", "Adobe Photoshop"],
+  //   techStack: ["Adobe inDesign", "Adobe Photoshop"],
   //   link: [
   //     { url: CarbonDrone, type: "pdf" },
   //     { url: CarbonDroneStatement, type: "pdf" },
@@ -130,7 +130,7 @@ const allProjects = [
   //   category: "UI/UX Design",
   //   title: "Mushroom Font",
   //   description: "A custom mushroom themed font.",
-  //   tags: ["Adobe inDesign", "Adobe Illustrator"],
+  //   techStack: ["Adobe inDesign", "Adobe Illustrator"],
   //   link: [
   //     { url: MushroomFont, type: "pdf" },
   //     { url: MushroomFontStatement, type: "pdf" },

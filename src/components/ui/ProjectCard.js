@@ -5,7 +5,7 @@ const ProjectCard = ({
   slug,
   title,
   description,
-  tags,
+  techStack,
   link,
   type,
   linkLabel,
@@ -24,7 +24,7 @@ const ProjectCard = ({
           </div>
 
           <div className="flex flex-wrap gap-2 mt-2">
-            {tags.map((tag, index) => (
+            {techStack.map((tag, index) => (
               <TextBox
                 key={index}
                 text={tag}

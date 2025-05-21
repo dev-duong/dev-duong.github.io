@@ -1,3 +1,5 @@
+// This page is responsible for displaying the details of a specific project.
+
 import { useParams, Link } from "react-router-dom";
 
 // Templates
