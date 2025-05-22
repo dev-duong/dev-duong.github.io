@@ -1,3 +1,9 @@
+// Image Imports
+import ogHome from "../../assets/projectImages/portfolio-v2/og-home.png";
+import ogAbout from "../../assets/projectImages/portfolio-v2/og-about.png";
+import ogProjects from "../../assets/projectImages/portfolio-v2/og-projects.png";
+import ogContact from "../../assets/projectImages/portfolio-v2/og-contacts.png";
+
 const projectsData = [
   // === Web Development Projects ===
   // Portfolio V2
@@ -24,7 +30,7 @@ const projectsData = [
     to explore projects by category. The site emphasizes clarity and usability, ensuring 
     visitors can easily navigate through my portfolio. Framer Motion enhances the user 
     experience with engaging animations, while React Router enables seamless transitions 
-    between different sections.`,  
+    between different sections.`,
 
     motivation: `I wanted to build this portfolio website as a way to challenge myself
     and grow both my design and development skills. It serves as a platform to showcase my
@@ -41,9 +47,27 @@ const projectsData = [
       "Category-based project filtering with dynamic rendering",
       "Custom reusable components (e.g. buttons, text boxes)",
       "Downloadable project assets and PDF resumes",
-      "Organized folder structure and maintainable codebase"
+      "Organized folder structure and maintainable codebase",
     ],
 
+    images: [
+      {
+        src: ogHome,
+        alt: "Home Page of portfolio website v2",
+      },
+      {
+        src: ogAbout,
+        alt: "Home Page of portfolio website v2",
+      },
+      {
+        src: ogProjects,
+        alt: "Home Page of portfolio website v2",
+      },
+      {
+        src: ogContact,
+        alt: "Home Page of portfolio website v2",
+      },
+    ],
   },
   // Portfolio V1
   {

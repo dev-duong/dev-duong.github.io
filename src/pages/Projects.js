@@ -13,15 +13,6 @@ import PageWrapper from "../components/layout/PageWrapper";
 // Pages
 import projectsData from "./data/ProjectData";
 
-// Project PDFs
-import RealWorldJournal from "../assets/Projects/RealWorldJournal.pdf";
-import MoreThanHuman from "../assets/Projects/MoreThanHuman.pdf";
-import CarbonDrone from "../assets/Projects/CarbonDrone.pdf";
-import CarbonDroneStatement from "../assets/Projects/CarbonDroneStatement.pdf";
-import MushroomFont from "../assets/Projects/MushroomFont.pdf";
-import MushroomFontStatement from "../assets/Projects/MushroomFontStatement.pdf";
-import MushroomLog from "../assets/Projects/MushroomLog.otf";
-
 // All Projects
 const allProjects = [
   // // Portfolio V1

@@ -1,7 +1,7 @@
 // Assets
-import { ReactComponent as GitHub } from "../../assets/github.svg";
-import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
-import { ReactComponent as Mail } from "../../assets/mail.svg";
+import { ReactComponent as GitHub } from "../../assets/socialLinks/github.svg";
+import { ReactComponent as Linkedin } from "../../assets/socialLinks/linkedin.svg";
+import { ReactComponent as Mail } from "../../assets/socialLinks/mail.svg";
 
 // Sizes
 const sizeClasses = {
