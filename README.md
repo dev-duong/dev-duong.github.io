@@ -8,8 +8,11 @@ A personal portfolio site built with **React** and **Tailwind CSS**, deployed on
 
 - **React** — JavaScript UI library.
 - **Tailwind CSS** — Utility-first CSS framework.
+- **Framer Motion** - Smooth page animations.
+- **React Router** - Dynamic page routing.
 - **gh-pages** — Deployment to GitHub Pages.
 - **GitHub Pages** – Static site hosting
+- **Figma** - Initial page designs.
 
 ---
 
