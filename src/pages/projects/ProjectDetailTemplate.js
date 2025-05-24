@@ -1,7 +1,10 @@
-// This is a template component for displaying project details.
+// Main Template for Projects
 
+// UI Imports
 import TextBox from "../../components/ui/TextBox";
 import { getDefaultLabel } from "../../components/ui/LinkHelper";
+
+// Layout Imports
 import PageWrapper from "../../components/layout/PageWrapper";
 import Divider from "../../components/layout/Divider";
 
@@ -12,12 +15,12 @@ const ProjectDetailTemplate = ({ project }) => {
         className="pr-4 custom-scrollbar"
         style={{ maxHeight: "70vh", overflowY: "auto" }}
       >
+        {/* ================================================================================ Project Information */}
+        {/* Project Title */}
         <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-
-        <div className="mb-6">
-          <strong>Category:</strong> {project.category}
-        </div>
-
+        {/* Project */}
+        <strong>Category:</strong> {project.category}
+        {/* Tech Stack Section */}
         <div className="flex items-center gap-4 my-6">
           <strong className="whitespace-nowrap self-start">Tech Stack:</strong>
 
@@ -32,12 +35,15 @@ const ProjectDetailTemplate = ({ project }) => {
             ))}
           </div>
         </div>
-
+        {/* ================================================================================ Project Description Section */}
         <div className="flex flex-col gap-6">
+          {/* Summary */}
           <Divider title="Summary" />
           <p className="text-justify">{project.summary}</p>
+          {/* Motivation */}
           <Divider title="Motivation" />
           <p className="text-justify">{project.motivation}</p>
+          {/* Features */}
           <Divider title="Features" />
           <ul className="list-disc list-inside space-y-1">
             {project.features.map((feature, index) => (
@@ -45,10 +51,10 @@ const ProjectDetailTemplate = ({ project }) => {
             ))}
           </ul>
         </div>
-        {/* Figma Design Screenshots */}
+        {/* ================================================================================ Figma Prototypes Section */}
         {project.images?.length > 0 && (
           <div className="mt-8 flex flex-col gap-4">
-            <Divider title="Figma Designs" />
+            <Divider title="Figma Prototypes" />
             {project.images.map((image, index) => (
               <img
                 key={index}
@@ -61,7 +67,8 @@ const ProjectDetailTemplate = ({ project }) => {
         )}
       </div>
 
-      {project.link && ( // Link to github etc
+      {/* ================================================================================ Project Links Section (GitHub, Demo, etc.) */}
+      {project.link && (
         <div className="my-6">
           {Array.isArray(project.link) ? (
             project.link.map((linkItem, i) => (
