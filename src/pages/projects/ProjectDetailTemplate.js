@@ -3,6 +3,8 @@
 // UI Imports
 import { getDefaultLabel } from "../../components/ui/LinkHelper";
 import TechStackList from "../../components/ui/TechStack";
+import FeaturesList from "../../components/ui/FeaturesList";
+import FigmaPrototypes from "../../components/ui/FigmaPrototype";
 
 // Layout Imports
 import PageWrapper from "../../components/layout/PageWrapper";
@@ -26,7 +28,7 @@ const ProjectDetailTemplate = ({ project }) => {
           <TechStackList techStack={project.techStack} />
         </div>
         {/* ================================================================================ Project Description Section */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 my-6">
           {/* Summary */}
           <Divider title="Summary" />
           <p className="text-justify">{project.summary}</p>
@@ -35,26 +37,11 @@ const ProjectDetailTemplate = ({ project }) => {
           <p className="text-justify">{project.motivation}</p>
           {/* Features */}
           <Divider title="Features" />
-          <ul className="list-disc list-inside space-y-1">
-            {project.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
+          <FeaturesList features={project.features} />
         </div>
         {/* ================================================================================ Figma Prototypes Section */}
-        {project.images?.length > 0 && (
-          <div className="mt-8 flex flex-col gap-4">
-            <Divider title="Figma Prototypes" />
-            {project.images.map((image, index) => (
-              <img
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                className="rounded-xl shadow-md max-w-full h-auto"
-              />
-            ))}
-          </div>
-        )}
+        <Divider title="Figma Prototypes" />
+        <FigmaPrototypes images={project.figures} />
       </div>
 
       {/* ================================================================================ Project Links Section (GitHub, Demo, etc.) */}

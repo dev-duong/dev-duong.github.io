@@ -50,7 +50,7 @@ const projectsData = [
       "Organized folder structure and maintainable codebase",
     ],
 
-    images: [
+    figures: [
       {
         src: ogHome,
         alt: "Home Page of portfolio website v2",
