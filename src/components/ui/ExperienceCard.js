@@ -1,6 +1,4 @@
-// components/ExperienceCard.js
-
-import TextBox from "../ui/TextBox"; // assuming TextBox is in the same folder
+import TextBox from "../ui/TextBox";
 
 const ExperienceCard = ({ date, skills, company, location, description }) => {
   return (
