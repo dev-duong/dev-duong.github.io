@@ -1,8 +1,8 @@
 // Main Template for Projects
 
 // UI Imports
-import TextBox from "../../components/ui/TextBox";
 import { getDefaultLabel } from "../../components/ui/LinkHelper";
+import TechStackList from "../../components/ui/TechStack";
 
 // Layout Imports
 import PageWrapper from "../../components/layout/PageWrapper";
@@ -23,17 +23,7 @@ const ProjectDetailTemplate = ({ project }) => {
         {/* Tech Stack Section */}
         <div className="flex items-center gap-4 my-6">
           <strong className="whitespace-nowrap self-start">Tech Stack:</strong>
-
-          <div className="flex flex-wrap gap-2">
-            {project.techStack?.map((techStack) => (
-              <TextBox
-                key={techStack}
-                text={techStack}
-                bgColor="bg-myOrange"
-                textColor="text-black"
-              />
-            ))}
-          </div>
+          <TechStackList techStack={project.techStack} />
         </div>
         {/* ================================================================================ Project Description Section */}
         <div className="flex flex-col gap-6">
