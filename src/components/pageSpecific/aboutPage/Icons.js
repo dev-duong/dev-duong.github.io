@@ -1,6 +1,6 @@
 import "devicon/devicon.min.css";
 
-const Icons = ({ icons }) => {
+const Icons = ({ icons = [] }) => {
   return (
     <div className="flex gap-4 flex-wrap">
       {icons.map((icon, idx) => (
