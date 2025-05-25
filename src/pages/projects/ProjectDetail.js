@@ -1,6 +1,6 @@
 // This page is responsible for displaying the details of a specific project.
 
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 
 // Templates
 import ProjectDetailTemplate from "./ProjectDetailTemplate";
@@ -13,7 +13,7 @@ const ProjectDetail = () => {
   const project = projectsData.find((p) => p.slug === slug);
 
   if (!project) {
-    <Route path="*" element={<NotFound />} />;
+    return <Navigate to="/notfound" replace />;
   }
 
   return (
