@@ -53,19 +53,19 @@ const projectsData = [
     figures: [
       {
         src: ogHome,
-        alt: "Home Page of portfolio website v2",
+        alt: "Original design of the home page of portfolio website v2",
       },
       {
         src: ogAbout,
-        alt: "Home Page of portfolio website v2",
+        alt: "Original design of the about page of portfolio website v2",
       },
       {
         src: ogProjects,
-        alt: "Home Page of portfolio website v2",
+        alt: "Original design of the projects page of portfolio website v2",
       },
       {
         src: ogContact,
-        alt: "Home Page of portfolio website v2",
+        alt: "Original design of the contact page of portfolio website v2",
       },
     ],
   },
