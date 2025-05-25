@@ -1,5 +1,5 @@
 // UI Imports
-import SocialLinks from "../components/ui/SocialLinks";
+import SocialLinks from "../components/ui/links/SocialLinks";
 import Typewriter from "../components/ui/Typewrite";
 
 // Layout Imports

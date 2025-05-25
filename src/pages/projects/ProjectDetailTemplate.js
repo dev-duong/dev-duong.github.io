@@ -1,10 +1,10 @@
 // Main Template for Projects
 
 // UI Imports
-import TechStackList from "../../components/ui/TechStack";
-import FeaturesList from "../../components/ui/FeaturesList";
-import FigmaPrototypes from "../../components/ui/FigmaPrototype";
-import ProjectLinks from "../../components/ui/ProjectLinks";
+import TechStackList from "../../components/ui/blog/TechStack";
+import FeaturesList from "../../components/ui/blog/FeaturesList";
+import FigmaPrototypes from "../../components/ui/blog/FigmaPrototype";
+import ProjectLinks from "../../components/ui/links/ProjectLinks";
 
 // Layout Imports
 import PageWrapper from "../../components/layout/PageWrapper";

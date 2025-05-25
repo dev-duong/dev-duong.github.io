@@ -1,6 +1,6 @@
 // UI
-import SocialLinks from "../components/ui/SocialLinks";
-import ExperienceCard from "../components/ui/ExperienceCard";
+import SocialLinks from "../components/ui/links/SocialLinks";
+import ExperienceCard from "../components/ui/cards/ExperienceCard";
 
 // Layout
 import Divider from "../components/layout/Divider";

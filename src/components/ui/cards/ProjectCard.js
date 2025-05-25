@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TextBox from "../ui/TextBox";
+import TextBox from "../TextBox";
 
 const ProjectCard = ({
   slug,

@@ -1,4 +1,4 @@
-import TextBox from "../../components/ui/TextBox";
+import TextBox from "../TextBox";
 
 const TechStackList = ({ techStack }) => (
   <div className="flex flex-wrap gap-2">
