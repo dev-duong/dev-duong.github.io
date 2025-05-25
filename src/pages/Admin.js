@@ -1,5 +1,5 @@
 // UI
-import SocialLinks from "../components/ui/links/SocialLinks";
+import SocialLinks from ".././components/ui/links/SocialLinks";
 
 // Animations
 import PageWrapper from "../components/layout/PageWrapper";

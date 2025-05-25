@@ -1,12 +1,12 @@
 // UI
 import SocialLinks from "../components/ui/links/SocialLinks";
 import ExperienceCard from "../components/ui/cards/ExperienceCard";
+import ProfileCard from "../components/ui/cards/ProfileCard";
 
 // Layout
 import Divider from "../components/layout/Divider";
 
 // Assets
-import Profile from "../assets/profile.png";
 import Icons from "../components/ui/Icons";
 
 // Animations
@@ -17,30 +17,14 @@ const About = () => {
   const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
-    <main className="pt-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
+    <main className="pt-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[45%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
       <PageWrapper>
         {/* Profile Section */}
         <div
           className="pr-4 custom-scrollbar"
           style={{ maxHeight: "80vh", overflowY: "auto" }}
         >
-          <section className="flex flex-col lg:flex-row justify-center items-center mb-5 gap-7 text-center lg:text-left bg-[#686868] bg-opacity-25 hover:bg-opacity-60 transition duration-300 ease-in-out transform hover:-translate-y-1 p-8 rounded-2xl">
-            <img
-              src={Profile}
-              alt="Portrait of Dat at college graduation"
-              className="w-40 h-40 rounded-full object-cover"
-            />
-            <article className="flex flex-col gap-7">
-              <Divider title="profile" />
-              <p className="text-gray-400">
-                I'm a Computer Science graduate with a passion for UX/UI design
-                and front-end development. I specialize in crafting intuitive,
-                responsive web and mobile experiences using HTML, CSS, React.js,
-                and Tailwind.
-              </p>
-            </article>
-          </section>
-
+          <ProfileCard />
           {/* Experience Section */}
           <section className="flex flex-col mb-7 gap-7">
             <Divider title="experience" />
