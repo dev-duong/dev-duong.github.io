@@ -1,4 +1,4 @@
-import TextBox from "../TextBox";
+import TextBox from "../../universal/TextBox";
 
 const ExperienceCard = ({ date, skills, company, location, description }) => {
   return (

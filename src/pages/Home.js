@@ -1,9 +1,9 @@
 // UI Imports
-import SocialLinks from "../components/ui/links/SocialLinks";
-import Typewriter from "../components/ui/Typewrite";
+import SocialLinks from "../components/universal/layout/SocialLinks";
+import Typewriter from "../components/pageSpecific/homePage/Typewrite";
 
 // Layout Imports
-import PageWrapper from "../components/layout/PageWrapper";
+import PageWrapper from "../components/universal/animations/PageWrapper";
 
 const Home = () => {
   return (

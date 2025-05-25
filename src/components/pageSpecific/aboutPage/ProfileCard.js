@@ -1,4 +1,4 @@
-import Divider from "../../layout/Divider";
+import Divider from "../../universal/Divider";
 import Profile from "../../../assets/profile.png";
 
 const ProfileCard = () => (

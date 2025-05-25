@@ -13,7 +13,7 @@ const ProjectDetail = () => {
   const project = projectsData.find((p) => p.slug === slug);
 
   if (!project) {
-    return <div>Project not found</div>;
+    <Route path="*" element={<NotFound />} />;
   }
 
   return (

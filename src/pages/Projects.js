@@ -3,12 +3,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // UI
-import SocialLinks from "../components/ui/links/SocialLinks";
-import ProjectCard from "../components/ui/cards/ProjectCard";
-import CategoryFilter from "../components/ui/CategoryFilter";
+import SocialLinks from "../components/universal/layout/SocialLinks";
+import ProjectCard from "../components/pageSpecific/projectPage/ProjectCard";
+import CategoryFilter from "../components/pageSpecific/projectPage/CategoryFilter";
 
 // Animations
-import PageWrapper from "../components/layout/PageWrapper";
+import PageWrapper from "../components/universal/animations/PageWrapper";
 
 // Pages
 import projectsData from "./data/ProjectData";

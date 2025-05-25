@@ -1,14 +1,14 @@
 // Main Template for Projects
 
 // UI Imports
-import TechStackList from "../../components/ui/blog/TechStack";
-import FeaturesList from "../../components/ui/blog/FeaturesList";
-import FigmaPrototypes from "../../components/ui/blog/FigmaPrototype";
-import ProjectLinks from "../../components/ui/links/ProjectLinks";
+import TechStackList from "../../components/pageSpecific/projectPage/blog/TechStack";
+import FeaturesList from "../../components/pageSpecific/projectPage/blog/FeaturesList";
+import FigmaPrototypes from "../../components/pageSpecific/projectPage/blog/FigmaPrototype";
+import ProjectLinks from "../../components/pageSpecific/projectPage/blog/ProjectLinks";
 
 // Layout Imports
-import PageWrapper from "../../components/layout/PageWrapper";
-import Divider from "../../components/layout/Divider";
+import PageWrapper from "../../components/universal/animations/PageWrapper";
+import Divider from "../../components/universal/Divider";
 
 const ProjectDetailTemplate = ({ project }) => {
   return (

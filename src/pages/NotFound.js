@@ -1,8 +1,8 @@
 // UI
-import SocialLinks from "../components/ui/links/SocialLinks";
+import SocialLinks from "../components/universal/layout/SocialLinks";
 
 // Animations
-import PageWrapper from "../components/layout/PageWrapper";
+import PageWrapper from "../components/universal/animations/PageWrapper";
 
 // Home Page
 const Home = () => {

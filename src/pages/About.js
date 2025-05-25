@@ -1,16 +1,14 @@
-// UI
-import SocialLinks from "../components/ui/links/SocialLinks";
-import ExperienceCard from "../components/ui/cards/ExperienceCard";
-import ProfileCard from "../components/ui/cards/ProfileCard";
+// Universal Imports
+import SocialLinks from "../components/universal/layout/SocialLinks";
 
-// Layout
-import Divider from "../components/layout/Divider";
-
-// Assets
-import Icons from "../components/ui/Icons";
+// UI Components
+import ExperienceCard from "../components/pageSpecific/aboutPage/ExperienceCard";
+import ProfileCard from "../components/pageSpecific/aboutPage/ProfileCard";
+import Divider from "../components/universal/Divider";
+import Icons from "../components/pageSpecific/aboutPage/Icons";
 
 // Animations
-import PageWrapper from "../components/layout/PageWrapper";
+import PageWrapper from "../components/universal/animations/PageWrapper";
 
 const About = () => {
   const skills = ["csharp", "css3", "python", "react", "html5", "tailwindcss"];

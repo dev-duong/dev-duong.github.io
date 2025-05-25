@@ -1,4 +1,4 @@
-import noise from "../../assets/noise.png";
+import noise from "../../../assets/noise.png";
 
 const Background = () => {
   return (

@@ -11,9 +11,9 @@ import NotFound from "./pages/NotFound";
 import ProjectDetail from "./pages/projects/ProjectDetail";
 
 // Components
-import Background from "./components/layout/Background";
-import Navbar from "./components/layout/Navbar";
-import VerticalCopyright from "./components/layout/Copyright";
+import Background from "./components/universal/layout/Background";
+import Navbar from "./components/universal/layout/Navbar";
+import VerticalCopyright from "./components/universal/layout/Copyright";
 
 function App() {
   return (
