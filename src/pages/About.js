@@ -20,20 +20,19 @@ const About = () => {
     <PageWrapper>
       <main className="pt-28 px-4 w-full max-w-3xl mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
         {/* Body */}
-
-        <div
+        <article
           className="pr-4 custom-scrollbar"
           style={{ maxHeight: "80vh", overflowY: "auto" }}
         >
           <ProfileCard />
           <ExperienceCardSection />
           <EducationCardSection />
-          <div className="flex flex-col md:flex-row justify-between gap-7">
+          <section className="flex flex-col md:flex-row justify-between gap-7">
             <SkillsSection skills={skills} />
             <ToolsSection tools={tools} />
-          </div>
+          </section>
           <CertificationsSection />
-        </div>
+        </article>
 
         {/* Footer */}
         <footer

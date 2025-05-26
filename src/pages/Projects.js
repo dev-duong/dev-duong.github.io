@@ -149,7 +149,8 @@ const Projects = () => {
   return (
     <PageWrapper>
       <main className="pt-28 px-4 w-full max-w-4xl mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
-        <section>
+        {/* Body */}
+        <article>
           <CategoryFilter
             categories={categories}
             selected={selectedCategory}
@@ -159,8 +160,9 @@ const Projects = () => {
             projects={filteredProjects}
             selectedCategory={selectedCategory}
           />
-        </section>
+        </article>
 
+        {/* Footer */}
         <footer
           className="fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full
              md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-0"
