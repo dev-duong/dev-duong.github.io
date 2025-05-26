@@ -17,9 +17,12 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="pt-28 max-w-4xl mx-auto px-16">
+    <div className="pt-28 max-w-5xl mx-auto px-16">
       {/* Back Link */}
-      <Link to="/projects" className="text-myOrange mb-4 inline-block">
+      <Link
+        to="/projects"
+        className="text-myOrange mb-4 inline-block hover:underline"
+      >
         ← Back to Projects
       </Link>
 

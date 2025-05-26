@@ -4,6 +4,29 @@ import ogAbout from "../../assets/projectImages/portfolio-v2/og-about.png";
 import ogProjects from "../../assets/projectImages/portfolio-v2/og-projects.png";
 import ogContact from "../../assets/projectImages/portfolio-v2/og-contacts.png";
 
+// Link Imports
+import RealWorldJournal from "../../assets/projectsPDF/RealWorldJournal.pdf";
+import MoreThanHuman from "../../assets/projectsPDF/MoreThanHuman.pdf";
+import CarbonDrone from "../../assets/projectsPDF/CarbonDrone.pdf";
+import CarbonDroneStatement from "../../assets/projectsPDF/CarbonDroneStatement.pdf";
+import MushroomFont from "../../assets/projectsPDF/MushroomFont.pdf";
+import MushroomFontStatement from "../../assets/projectsPDF/MushroomFontStatement.pdf";
+import MushroomLog from "../../assets/projectsPDF/MushroomLog.otf";
+
+// Structure of the project data
+// slug: Unique identifier for the project
+// category: Category of the project (e.g., Web Development, Games, etc.)
+// title: Title of the project
+// year: Year of completion
+// description: Brief description of the project
+// techStack: Technologies used in the project
+// link: Link to the project (GitHub, live site, etc.)
+// type: Type of link (e.g., "github", "live", "pdf")
+// summary: A brief summary of the project
+// motivation: Motivation behind the project
+// features: Key features of the project
+// figures: Array of images related to the project (optional)
+
 const projectsData = [
   // === Web Development Projects ===
   // Portfolio V2
@@ -74,61 +97,169 @@ const projectsData = [
     slug: "portfolio-website-v1",
     category: "Web Development",
     title: "Portfolio Website V1",
+    year: "2023",
     description:
-      "A Static portfolio website built using HTML and CSS [No longer Live].",
+      "A Static portfolio website built using HTML and CSS, showcasing my skills [No longer live].",
     techStack: ["HTML", "CSS", "GitHub Pages"],
     link: "https://github.com/dev-duong/v1-dev-duong.github.io",
     type: "github",
+
+    summary: `This portfolio website is a static site built with HTML and CSS, designed to
+    showcase my skills and projects. It features a clean and simple layout, with sections for
+    my work, skills, and contact information. The site is fully responsive, ensuring a good
+    user experience across different devices. The design emphasizes clarity and usability,
+    allowing visitors to easily navigate through my portfolio and learn more about my work.`,
+
+    motivation: `I built this portfolio website to establish an online presence and
+    showcase my skills and projects. It serves as a platform to demonstrate my abilities in
+    web development and design, while also providing a way for potential employers and clients
+    to learn more about my work. The goal was to create a simple yet effective portfolio that
+    highlights my skills and projects, while also being easy to maintain and update.`,
+    features: [
+      "Fully responsive design for desktop and mobile",
+      "Built with HTML and CSS",
+      "Simple and clean layout",
+      "Sections for work, skills, and contact information",
+      "Easy to maintain and update",
+    ],
+    figures: [],
   },
+  // Web Calculator
   {
-    slug: "portfolio-website-v1",
+    slug: "web-calculator",
     category: "Web Development",
-    title: "Portfolio Website V1",
+    title: "Web-Calculator",
+    year: "2024",
     description:
-      "A Static portfolio website built using HTML and CSS [No longer Live].",
-    techStack: ["HTML", "CSS", "GitHub Pages"],
-    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+      "A web-based calculator built using HTML, CSS, and JavaScript, providing basic arithmetic functionality with a user-friendly interface.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/dev-duong/Web-Calculator",
     type: "github",
+
+    summary: `This web-based calculator is designed to perform basic arithmetic operations
+    such as addition, subtraction, multiplication, and division. Built with HTML, CSS, and
+    JavaScript, it features a user-friendly interface that allows users to input numbers and
+    perform calculations easily.`,
+
+    motivation: `I created this calculator to practice my web development skills and
+    demonstrate my ability to build interactive web applications. It serves as a simple yet
+    effective project that showcases my understanding of HTML, CSS, and JavaScript. The goal
+    was to create a functional and visually appealing calculator that can be used in everyday
+    tasks.`,
+
+    features: [
+      "Basic arithmetic operations (addition, subtraction, multiplication, division)",
+      "User-friendly interface with clear buttons and display",
+      "Built with HTML, CSS, and JavaScript",
+      "Easy to maintain and update",
+    ],
   },
+  // Portfolio [Mobile]
   {
-    slug: "portfolio-website-v1",
+    slug: "mobile-portfolio-website",
     category: "Web Development",
-    title: "Portfolio Website V1",
+    title: "Portfolio Website [Mobile-Only]",
     description:
-      "A Static portfolio website built using HTML and CSS [No longer Live].",
-    techStack: ["HTML", "CSS", "GitHub Pages"],
-    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+      "A website portfolio built using HTML, and CSS. [Built for only mobile]",
+    techStack: ["HTML", "CSS"],
+    link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
     type: "github",
   },
+  // Travel Site
   {
-    slug: "portfolio-website-v1",
+    slug: "responsive-travel-website",
     category: "Web Development",
-    title: "Portfolio Website V1",
+    title: "Responsive Travel Website",
     description:
-      "A Static portfolio website built using HTML and CSS [No longer Live].",
-    techStack: ["HTML", "CSS", "GitHub Pages"],
-    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+      "A Static portfolio website built using HTML and CSS adhering to the requirements of Web Content Accessibility Guidelines (WCAG)",
+    techStack: ["HTML", "CSS"],
+    link: "https://github.com/dev-duong/Resposive-Travel-Website",
     type: "github",
   },
+  // First Quest
   {
-    slug: "portfolio-website-v1",
-    category: "Game",
-    title: "Portfolio Website V1",
-    description:
-      "A Static portfolio website built using HTML and CSS [No longer Live].",
-    techStack: ["HTML", "CSS", "GitHub Pages"],
-    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    slug: "first-quest",
+    category: "Games",
+    title: "First Quest",
+    description: "A C# Console text based game.",
+    techStack: ["C#"],
+    link: "https://github.com/dev-duong/firstQuest",
     type: "github",
   },
+  // Catch Game
   {
-    slug: "portfolio-website-v1",
-    category: "Game",
-    title: "Portfolio Website V1",
-    description:
-      "A Static portfolio website built using HTML and CSS [No longer Live].",
-    techStack: ["HTML", "CSS", "GitHub Pages"],
-    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    slug: "catch-game",
+    category: "Games",
+    title: "Catch Game",
+    description: "A simple basket catch game built in Unity.",
+    techStack: ["C#", "HLSL", "ShaderLab", "Unity"],
+    link: "https://github.com/dev-duong/CatchGame",
     type: "github",
+  },
+  // Savings Calculator
+  {
+    slug: "savings-calculator",
+    category: "Utility",
+    title: "Saving Calculator",
+    description:
+      "An interactive tool that helps users estimate how much they can split their income by percentage.",
+    techStack: ["C#"],
+    link: "https://github.com/dev-duong/savingsCalculator",
+    type: "github",
+  },
+  // Real World Journal
+  {
+    slug: "real-world-journal",
+    category: "UI/UX Design",
+    title: "Real World Journal",
+    description:
+      "A logo Design for a fictional journal company called Real World Jounral.",
+    techStack: ["Adobe inDesign", "Adobe Illustrator"],
+    link: RealWorldJournal,
+    type: "pdf",
+  },
+  // More Than Human
+  {
+    slug: "more-than-human",
+    category: "UI/UX Design",
+    title: "More Than Human",
+    description:
+      "A critical experience concept design. Includes contextual research, world building, and designs.",
+    techStack: ["Adobe inDesign", "Adobe Photoshop"],
+    link: MoreThanHuman,
+    type: "pdf",
+  },
+  // Carbon Drone
+  {
+    slug: "carbon-drone",
+    category: "UI/UX Design",
+    title: "Carbon Drone",
+    description:
+      "A critical experience and speculative concept design magazine and statement.",
+    techStack: ["Adobe inDesign", "Adobe Photoshop"],
+    link: [
+      { url: CarbonDrone, type: "pdf" },
+      { url: CarbonDroneStatement, type: "pdf" },
+    ],
+    linkLabel: ["Open Magazine PDF →", "Open Statement PDF →"],
+  },
+  // Mushroom Font
+  {
+    slug: "mushroom-font",
+    category: "UI/UX Design",
+    title: "Mushroom Font",
+    description: "A custom mushroom themed font.",
+    techStack: ["Adobe inDesign", "Adobe Illustrator"],
+    link: [
+      { url: MushroomFont, type: "pdf" },
+      { url: MushroomFontStatement, type: "pdf" },
+      { url: MushroomLog },
+    ],
+    linkLabel: [
+      "Open Magazine PDF →",
+      "Open Statement PDF →",
+      "Download Font →",
+    ],
   },
 ];
 

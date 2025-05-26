@@ -34,7 +34,6 @@ const About = () => {
           <CertificationsSection />
         </article>
 
-        {/* Footer */}
         <footer
           className="absolute md:fixed bottom-2 left-1/2 -translate-x-1/2 flex justify-center w-full
              md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-4"

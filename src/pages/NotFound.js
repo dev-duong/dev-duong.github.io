@@ -8,7 +8,7 @@ import PageWrapper from "../components/universal/animations/PageWrapper";
 const Home = () => {
   return (
     <PageWrapper>
-      <main className="pt-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0 text-center">
+      <main className="pt-28 px-4 w-full max-w-3xl mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0 text-center">
         {/* Body */}
         <article>
           <h1 className="text-5xl font-bold mb-4">404</h1>

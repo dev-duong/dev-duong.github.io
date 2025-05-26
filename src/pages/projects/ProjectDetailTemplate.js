@@ -17,10 +17,18 @@ const ProjectDetailTemplate = ({ project }) => {
         className="pr-4 custom-scrollbar"
         style={{ maxHeight: "70vh", overflowY: "auto" }}
       >
-        <section>
+        <section className="flex flex-col">
           <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
           {/* Project */}
-          <strong>Category:</strong> {project.category}
+          <div className="flex gap-2">
+            <strong>Category:</strong>
+            {project.category}
+          </div>
+          <div className="flex gap-2">
+            <strong>Year:</strong>
+            {project.year}
+          </div>
+
           <div className="flex items-center gap-4 my-6">
             <strong className="whitespace-nowrap self-start">
               Tech Stack:
