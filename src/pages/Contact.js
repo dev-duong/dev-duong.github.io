@@ -7,12 +7,12 @@ import PageWrapper from "../components/universal/animations/PageWrapper";
 // Contact Page
 const Contact = () => {
   return (
-    <main className="h-screen flex flex-col items-center justify-center text-center">
-      <PageWrapper>
+    <PageWrapper>
+      <main className="h-screen flex flex-col items-center justify-center text-center">
         <h1 className="text-2xl">Contact Page</h1>
         <SocialLinks size="lg" />
-      </PageWrapper>
-    </main>
+      </main>
+    </PageWrapper>
   );
 };
 

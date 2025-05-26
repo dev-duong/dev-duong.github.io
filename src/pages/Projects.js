@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 // UI
 import SocialLinks from "../components/universal/layout/SocialLinks";
-import ProjectCard from "../components/pageSpecific/projectPage/ProjectCard";
 import CategoryFilter from "../components/pageSpecific/projectPage/CategoryFilter";
+
+// Page Components
+import ProjectList from "../components/pageSpecific/projectPage/ProjectList";
 
 // Animations
 import PageWrapper from "../components/universal/animations/PageWrapper";
@@ -147,50 +147,28 @@ const Projects = () => {
   ).sort((a, b) => a.title.localeCompare(b.title));
 
   return (
-    <main className="p-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
-      <PageWrapper>
+    <PageWrapper>
+      <main className="pt-28 px-4 w-full max-w-4xl mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
         <section>
           <CategoryFilter
             categories={categories}
             selected={selectedCategory}
             onSelect={setSelectedCategory}
           />
-
-          <article
-            className="flex flex-col gap-7 mb-10 pr-4 overflow-y-auto custom-scrollbar"
-            style={{ maxHeight: "70vh" }} // or choose height based on your layout
-          >
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={selectedCategory || "all"}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="flex flex-col gap-7 mb-10 pr-4 overflow-y-auto custom-scrollbar"
-                style={{ maxHeight: "70vh" }}
-              >
-                {filteredProjects.map((project) => (
-                  <Link
-                    key={project.slug}
-                    to={`/projects/${project.slug}`}
-                    className="block no-underline hover:no-underline"
-                  >
-                    <ProjectCard {...project} />
-                  </Link>
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          </article>
+          <ProjectList
+            projects={filteredProjects}
+            selectedCategory={selectedCategory}
+          />
         </section>
-      </PageWrapper>
 
-      <footer className="absolute md:fixed bottom-2 left-1/2 -translate-x-1/2 flex justify-center w-full md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-4">
-        <PageWrapper>
+        <footer
+          className="fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center w-full
+             md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-0"
+        >
           <SocialLinks />
-        </PageWrapper>
-      </footer>
-    </main>
+        </footer>
+      </main>
+    </PageWrapper>
   );
 };
 

@@ -80,6 +80,56 @@ const projectsData = [
     link: "https://github.com/dev-duong/v1-dev-duong.github.io",
     type: "github",
   },
+  {
+    slug: "portfolio-website-v1",
+    category: "Web Development",
+    title: "Portfolio Website V1",
+    description:
+      "A Static portfolio website built using HTML and CSS [No longer Live].",
+    techStack: ["HTML", "CSS", "GitHub Pages"],
+    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    type: "github",
+  },
+  {
+    slug: "portfolio-website-v1",
+    category: "Web Development",
+    title: "Portfolio Website V1",
+    description:
+      "A Static portfolio website built using HTML and CSS [No longer Live].",
+    techStack: ["HTML", "CSS", "GitHub Pages"],
+    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    type: "github",
+  },
+  {
+    slug: "portfolio-website-v1",
+    category: "Web Development",
+    title: "Portfolio Website V1",
+    description:
+      "A Static portfolio website built using HTML and CSS [No longer Live].",
+    techStack: ["HTML", "CSS", "GitHub Pages"],
+    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    type: "github",
+  },
+  {
+    slug: "portfolio-website-v1",
+    category: "Game",
+    title: "Portfolio Website V1",
+    description:
+      "A Static portfolio website built using HTML and CSS [No longer Live].",
+    techStack: ["HTML", "CSS", "GitHub Pages"],
+    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    type: "github",
+  },
+  {
+    slug: "portfolio-website-v1",
+    category: "Game",
+    title: "Portfolio Website V1",
+    description:
+      "A Static portfolio website built using HTML and CSS [No longer Live].",
+    techStack: ["HTML", "CSS", "GitHub Pages"],
+    link: "https://github.com/dev-duong/v1-dev-duong.github.io",
+    type: "github",
+  },
 ];
 
 export default projectsData;

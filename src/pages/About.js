@@ -17,9 +17,10 @@ const About = () => {
   const tools = ["git", "github", "vscode", "figma", "notion"];
 
   return (
-    <main className="pt-28 px-4 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] xl:max-w-[45%] mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
-      {/* Body */}
-      <PageWrapper>
+    <PageWrapper>
+      <main className="pt-28 px-4 w-full max-w-3xl mx-auto flex flex-col justify-center flex-grow pb-20 md:pb-0">
+        {/* Body */}
+
         <div
           className="pr-4 custom-scrollbar"
           style={{ maxHeight: "80vh", overflowY: "auto" }}
@@ -33,18 +34,16 @@ const About = () => {
           </div>
           <CertificationsSection />
         </div>
-      </PageWrapper>
 
-      {/* Footer */}
-      <footer
-        className="absolute md:fixed bottom-2 left-1/2 -translate-x-1/2 flex justify-center w-full
+        {/* Footer */}
+        <footer
+          className="absolute md:fixed bottom-2 left-1/2 -translate-x-1/2 flex justify-center w-full
              md:left-auto md:translate-x-0 md:justify-end md:items-end md:right-4"
-      >
-        <PageWrapper>
+        >
           <SocialLinks />
-        </PageWrapper>
-      </footer>
-    </main>
+        </footer>
+      </main>
+    </PageWrapper>
   );
 };
 
