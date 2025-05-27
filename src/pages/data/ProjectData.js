@@ -1,8 +1,14 @@
 // Image Imports
+// portfolio v2 images
 import ogHome from "../../assets/projectImages/portfolio-v2/og-home.png";
 import ogAbout from "../../assets/projectImages/portfolio-v2/og-about.png";
 import ogProjects from "../../assets/projectImages/portfolio-v2/og-projects.png";
 import ogContact from "../../assets/projectImages/portfolio-v2/og-contacts.png";
+// portfolio v1 images
+import v1index from "../../assets/projectImages/portfolio-v1/v1-index.png";
+import v1about from "../../assets/projectImages/portfolio-v1/v1-about.png";
+import v1projects from "../../assets/projectImages/portfolio-v1/v1-projects.png";
+import v1contact from "../../assets/projectImages/portfolio-v1/v1-contact.png";
 
 // Link Imports
 import RealWorldJournal from "../../assets/projectsPDF/RealWorldJournal.pdf";
@@ -122,7 +128,24 @@ const projectsData = [
       "Sections for work, skills, and contact information",
       "Easy to maintain and update",
     ],
-    figures: [],
+    figures: [
+      {
+        src: v1index,
+        alt: "Original design of the home page of portfolio website v1",
+      },
+      {
+        src: v1about,
+        alt: "Original design of the about page of portfolio website v1",
+      },
+      {
+        src: v1projects,
+        alt: "Original design of the projects page of portfolio website v1",
+      },
+      {
+        src: v1contact,
+        alt: "Original design of the contact page of portfolio website v1",
+      },
+    ],
   },
   // Web Calculator
   {
