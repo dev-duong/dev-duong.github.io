@@ -33,7 +33,7 @@ const ProjectCard = ({
               />
             ))}
           </div>
-          <span className="mt-3 inline-block text-myOrange font-medium text-sm hover:underline">
+          <span className="mt-3 inline-block text-myOrange font-medium text-sm hover:text-orange-500 hover:underline">
             View more &rarr;
           </span>
         </div>

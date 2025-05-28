@@ -8,7 +8,7 @@ const ProjectUnavailable = () => (
     </p>
     <a
       href="/projects"
-      className="text-blue-500 underline hover:text-blue-700 transition"
+      className="text-myOrange hover:underline hover:text-orange-500 transition"
     >
       ← Back to Projects
     </a>

@@ -15,7 +15,7 @@ const Home = () => {
           <p className="text-xl mb-8">Page not found</p>
           <a
             href="/home"
-            className="text-blue-400 underline hover:text-blue-600 transition"
+            className="text-myOrange underline hover:text-orange-500 transition"
           >
             Go back Home
           </a>

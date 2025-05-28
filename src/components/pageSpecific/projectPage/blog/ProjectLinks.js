@@ -20,7 +20,7 @@ const ProjectLinks = ({ link, linkLabel, type }) => {
             href={linkItem.url || linkItem}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-myOrange mr-4 hover:underline"
+            className="text-myOrange mr-4 hover:underline hover:text-orange-500 transition"
           >
             {linkLabel?.[i] || getDefaultLabel(linkItem.type || type)}
           </a>
@@ -35,7 +35,7 @@ const ProjectLinks = ({ link, linkLabel, type }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-myOrange hover:underline"
+        className="text-myOrange hover:underline hover:text-orange-500 transition"
       >
         {linkLabel || getDefaultLabel(type)}
       </a>
