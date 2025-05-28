@@ -32,6 +32,7 @@ import MushroomLog from "../../assets/projectsPDF/MushroomLog.otf";
 // motivation: Motivation behind the project
 // features: Key features of the project
 // figures: Array of images related to the project (optional)
+// ready: Indicates if the project is ready to be showcased (optional)
 
 const projectsData = [
   // === Web Development Projects ===
@@ -97,6 +98,7 @@ const projectsData = [
         alt: "Original design of the contact page of portfolio website v2",
       },
     ],
+    ready: true,
   },
   // Portfolio V1
   {
@@ -146,6 +148,7 @@ const projectsData = [
         alt: "Original design of the contact page of portfolio website v1",
       },
     ],
+    ready: true,
   },
   // Web Calculator
   {
@@ -176,6 +179,7 @@ const projectsData = [
       "Built with HTML, CSS, and JavaScript",
       "Easy to maintain and update",
     ],
+    ready: true,
   },
   // Portfolio [Mobile]
   {
@@ -187,6 +191,7 @@ const projectsData = [
     techStack: ["HTML", "CSS"],
     link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
     type: "github",
+    ready: false,
   },
   // Travel Site
   {
@@ -198,6 +203,7 @@ const projectsData = [
     techStack: ["HTML", "CSS"],
     link: "https://github.com/dev-duong/Resposive-Travel-Website",
     type: "github",
+    ready: false,
   },
   // First Quest
   {
@@ -208,6 +214,7 @@ const projectsData = [
     techStack: ["C#"],
     link: "https://github.com/dev-duong/firstQuest",
     type: "github",
+    ready: false,
   },
   // Catch Game
   {
@@ -218,6 +225,7 @@ const projectsData = [
     techStack: ["C#", "HLSL", "ShaderLab", "Unity"],
     link: "https://github.com/dev-duong/CatchGame",
     type: "github",
+    ready: false,
   },
   // Savings Calculator
   {
@@ -229,6 +237,7 @@ const projectsData = [
     techStack: ["C#"],
     link: "https://github.com/dev-duong/savingsCalculator",
     type: "github",
+    ready: false,
   },
   // Real World Journal
   {
@@ -240,6 +249,7 @@ const projectsData = [
     techStack: ["Adobe inDesign", "Adobe Illustrator"],
     link: RealWorldJournal,
     type: "pdf",
+    ready: false,
   },
   // More Than Human
   {
@@ -251,6 +261,7 @@ const projectsData = [
     techStack: ["Adobe inDesign", "Adobe Photoshop"],
     link: MoreThanHuman,
     type: "pdf",
+    ready: false,
   },
   // Carbon Drone
   {
@@ -265,6 +276,7 @@ const projectsData = [
       { url: CarbonDroneStatement, type: "pdf" },
     ],
     linkLabel: ["Open Magazine PDF →", "Open Statement PDF →"],
+    ready: false,
   },
   // Mushroom Font
   {
@@ -283,6 +295,7 @@ const projectsData = [
       "Open Statement PDF →",
       "Download Font →",
     ],
+    ready: false,
   },
 ];
 

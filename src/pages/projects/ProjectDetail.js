@@ -1,12 +1,7 @@
-// This page is responsible for displaying the details of a specific project.
-
-import { useParams, Link, Navigate } from "react-router-dom";
-
-// Templates
-import ProjectDetailTemplate from "./ProjectDetailTemplate";
-
-// Project Pages
+import { useParams, Navigate } from "react-router-dom";
 import projectsData from "../data/ProjectData";
+import ProjectDetailTemplate from "./ProjectDetailTemplate";
+import ProjectUnavailable from "./ProjectUnavailable";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -16,17 +11,12 @@ const ProjectDetail = () => {
     return <Navigate to="/notfound" replace />;
   }
 
-  return (
-    <div className="pt-28 max-w-5xl mx-auto px-16">
-      {/* Back Link */}
-      <Link
-        to="/projects"
-        className="text-myOrange mb-4 inline-block hover:underline"
-      >
-        ← Back to Projects
-      </Link>
+  if (project.ready === false) {
+    return <ProjectUnavailable />;
+  }
 
-      {/* Pass project data to template */}
+  return (
+    <div className="pt-28 max-w-4xl mx-auto px-16">
       <ProjectDetailTemplate project={project} />
     </div>
   );
