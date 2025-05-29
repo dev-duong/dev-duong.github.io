@@ -14,7 +14,7 @@ const ProjectDetailTemplate = ({ project }) => {
   return (
     <PageWrapper>
       <article
-        className="pr-4 custom-scrollbar"
+        className="w-full max-w-4xl mx-auto pr-4 custom-scrollbar"
         style={{ maxHeight: "70vh", overflowY: "auto" }}
       >
         <section className="flex flex-col">
@@ -29,7 +29,7 @@ const ProjectDetailTemplate = ({ project }) => {
             {project.year}
           </div>
 
-          <div className="flex items-center gap-4 my-6">
+          <div className="flex flex-col sm:flex-row items-start gap-4 my-6">
             <strong className="whitespace-nowrap self-start">
               Tech Stack:
             </strong>
@@ -53,7 +53,7 @@ const ProjectDetailTemplate = ({ project }) => {
           <FigmaPrototypes images={project.figures} />
         </section>
       </article>
-      <section>
+      <section className="w-full max-w-4xl mx-auto">
         <ProjectLinks
           link={project.link}
           linkLabel={project.linkLabel}
