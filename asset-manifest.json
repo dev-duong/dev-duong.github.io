@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b6eb27f.css",
-    "main.js": "/static/js/main.a9215326.js",
+    "main.css": "/static/css/main.b61fe7f0.css",
+    "main.js": "/static/js/main.e5270b0e.js",
     "static/media/MoreThanHuman.pdf": "/static/media/MoreThanHuman.5e06a31101370a6b84e5.pdf",
     "static/media/devicon.svg?iehcku": "/static/media/devicon.de33ff67547800466a48.svg",
     "static/media/CarbonDrone.pdf": "/static/media/CarbonDrone.b7281f8091186ae7c9e8.pdf",
@@ -24,13 +24,13 @@
     "static/media/v1-contact.png": "/static/media/v1-contact.f15753005d2638089258.png",
     "static/media/github.svg": "/static/media/github.ea6e4b2f197f2248a12b4628a831c303.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.6c04deac68b891f2fc5e5522c6613ada.svg",
-    "static/media/mail.svg": "/static/media/mail.08b0fb9dd4d46222a6a230f80fe37d24.svg",
+    "static/media/mail.svg": "/static/media/mail.41717dff2f752cc001862a74a2480eda.svg",
     "index.html": "/index.html",
-    "main.1b6eb27f.css.map": "/static/css/main.1b6eb27f.css.map",
-    "main.a9215326.js.map": "/static/js/main.a9215326.js.map"
+    "main.b61fe7f0.css.map": "/static/css/main.b61fe7f0.css.map",
+    "main.e5270b0e.js.map": "/static/js/main.e5270b0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b6eb27f.css",
-    "static/js/main.a9215326.js"
+    "static/css/main.b61fe7f0.css",
+    "static/js/main.e5270b0e.js"
   ]
 }
