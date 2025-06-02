@@ -11,7 +11,7 @@ const ProjectDetail = () => {
     return <Navigate to="/notfound" replace />;
   }
 
-  if (project.ready === false) {
+  if (project.status === false) {
     return <ProjectUnavailable />;
   }
 
