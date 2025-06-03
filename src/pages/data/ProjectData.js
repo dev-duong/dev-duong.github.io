@@ -1,15 +1,18 @@
 // Image Imports
 // portfolio v2 images
-import ogHome from "../../assets/projectImages/portfolio-v2/og-home.png";
-import ogAbout from "../../assets/projectImages/portfolio-v2/og-about.png";
-import ogProjects from "../../assets/projectImages/portfolio-v2/og-projects.png";
-import ogContact from "../../assets/projectImages/portfolio-v2/og-contacts.png";
+import portifolioV2Home from "../../assets/projectImages/portfolio-v2/v2-home.png";
+import portifolioV2About from "../../assets/projectImages/portfolio-v2/v2-about.png";
+import portifolioV2Projects from "../../assets/projectImages/portfolio-v2/v2-projects.png";
+import portifolioV2Contacts from "../../assets/projectImages/portfolio-v2/v2-contacts.png";
 // portfolio v1 images
-import v1index from "../../assets/projectImages/portfolio-v1/v1-index.png";
-import v1about from "../../assets/projectImages/portfolio-v1/v1-about.png";
-import v1projects from "../../assets/projectImages/portfolio-v1/v1-projects.png";
-import v1contact from "../../assets/projectImages/portfolio-v1/v1-contact.png";
-
+import portifolioV1Home from "../../assets/projectImages/portfolio-v1/v1-index.png";
+import portifolioV1About from "../../assets/projectImages/portfolio-v1/v1-about.png";
+import portifolioV1Projects from "../../assets/projectImages/portfolio-v1/v1-projects.png";
+import portifolioV1Contacts from "../../assets/projectImages/portfolio-v1/v1-contact.png";
+// v1 mobile image
+import mobilePortfolioHome from "../../assets/projectImages/mobile-portfolio/v1-home.png";
+import mobilePortfolioProjects from "../../assets/projectImages/mobile-portfolio/v1-projects.png";
+import mobilePortfolioContacts from "../../assets/projectImages/mobile-portfolio/v1-contact.png";
 // Link Imports
 import RealWorldJournal from "../../assets/projectsPDF/RealWorldJournal.pdf";
 import MoreThanHuman from "../../assets/projectsPDF/MoreThanHuman.pdf";
@@ -82,19 +85,19 @@ const projectsData = [
 
     figures: [
       {
-        src: ogHome,
+        src: portifolioV2Home,
         alt: "Original design of the home page of portfolio website v2",
       },
       {
-        src: ogAbout,
+        src: portifolioV2About,
         alt: "Original design of the about page of portfolio website v2",
       },
       {
-        src: ogProjects,
+        src: portifolioV2Projects,
         alt: "Original design of the projects page of portfolio website v2",
       },
       {
-        src: ogContact,
+        src: portifolioV2Contacts,
         alt: "Original design of the contact page of portfolio website v2",
       },
     ],
@@ -123,6 +126,7 @@ const projectsData = [
     web development and design, while also providing a way for potential employers and clients
     to learn more about my work. The goal was to create a simple yet effective portfolio that
     highlights my skills and projects, while also being easy to maintain and update.`,
+
     features: [
       "Fully responsive design for desktop and mobile",
       "Built with HTML and CSS",
@@ -130,21 +134,22 @@ const projectsData = [
       "Sections for work, skills, and contact information",
       "Easy to maintain and update",
     ],
+
     figures: [
       {
-        src: v1index,
+        src: portifolioV1Home,
         alt: "Original design of the home page of portfolio website v1",
       },
       {
-        src: v1about,
+        src: portifolioV1About,
         alt: "Original design of the about page of portfolio website v1",
       },
       {
-        src: v1projects,
+        src: portifolioV1Projects,
         alt: "Original design of the projects page of portfolio website v1",
       },
       {
-        src: v1contact,
+        src: portifolioV1Contacts,
         alt: "Original design of the contact page of portfolio website v1",
       },
     ],
@@ -191,7 +196,40 @@ const projectsData = [
     techStack: ["HTML", "CSS"],
     link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
     type: "github",
-    status: false,
+
+    summary: `This web-based calculator is designed to perform basic arithmetic operations
+    such as addition, subtraction, multiplication, and division. Built with HTML, CSS, and
+    JavaScript, it features a user-friendly interface that allows users to input numbers and
+    perform calculations easily.`,
+
+    motivation: `I created this calculator to practice my web development skills and
+    demonstrate my ability to build interactive web applications. It serves as a simple yet
+    effective project that showcases my understanding of HTML, CSS, and JavaScript. The goal
+    was to create a functional and visually appealing calculator that can be used in everyday
+    tasks.`,
+
+    features: [
+      "Basic arithmetic operations (addition, subtraction, multiplication, division)",
+      "User-friendly interface with clear buttons and display",
+      "Built with HTML, CSS, and JavaScript",
+      "Easy to maintain and update",
+    ],
+
+    figures: [
+      {
+        src: mobilePortfolioHome,
+        alt: "Home page of the mobile portfolio website",
+      },
+      {
+        src: mobilePortfolioProjects,
+        alt: "About page of the mobile portfolio website",
+      },
+      {
+        src: mobilePortfolioContacts,
+        alt: "Contact page of the mobile portfolio website",
+      },
+    ],
+    status: true,
   },
   // Travel Site
   {
