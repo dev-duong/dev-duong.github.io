@@ -197,22 +197,22 @@ const projectsData = [
     link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
     type: "github",
 
-    summary: `This web-based calculator is designed to perform basic arithmetic operations
-    such as addition, subtraction, multiplication, and division. Built with HTML, CSS, and
-    JavaScript, it features a user-friendly interface that allows users to input numbers and
-    perform calculations easily.`,
+    summary: `This website is designed to serve as my personal online space where I can present  
+    my skills, projects, and contact information in a clear and professional way. It’s built to 
+    be user-friendly and responsive, allowing visitors to easily explore my work, learn about my
+    background, and reach out to me through various channels.`,
 
-    motivation: `I created this calculator to practice my web development skills and
-    demonstrate my ability to build interactive web applications. It serves as a simple yet
-    effective project that showcases my understanding of HTML, CSS, and JavaScript. The goal
-    was to create a functional and visually appealing calculator that can be used in everyday
-    tasks.`,
+    motivation: `This website was created as part of an assignment for my university course. It  
+    gave me the opportunity to apply what I’ve learned about web design and development by
+    building a functional and visually appealing personal portfolio site. Through this project,
+    I aimed to improve my skills and create a platform that represents me professionally.`,
 
     features: [
-      "Basic arithmetic operations (addition, subtraction, multiplication, division)",
-      "User-friendly interface with clear buttons and display",
-      "Built with HTML, CSS, and JavaScript",
-      "Easy to maintain and update",
+      "Clear and professional presentation of skills and projects",
+      "Responsive design that works well on mobile devices",
+      "Contact page with direct message form and social media links",
+      "Built using HTML and CSS with organized, semantic structure",
+      "Easy navigation with a consistent menu across pages",
     ],
 
     figures: [

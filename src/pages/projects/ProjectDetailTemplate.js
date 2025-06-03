@@ -16,19 +16,20 @@ import { Link } from "react-router-dom";
 const ProjectDetailTemplate = ({ project }) => {
   return (
     <PageWrapper>
+      <div className="mb-4">
+        <Link
+          to="/projects"
+          className="inline-block text-myOrange font-medium text-m hover:text-orange-500 hover:underline transition"
+        >
+          ← Back to Projects
+        </Link>
+      </div>
       <article
         className="w-full max-w-4xl mx-auto pr-4 custom-scrollbar"
         style={{ maxHeight: "70vh", overflowY: "auto" }}
       >
         {/* Back to Projects Button */}
-        <div className="mb-4">
-          <Link
-            to="/projects"
-            className="inline-block text-myOrange font-medium text-m hover:text-orange-500 hover:underline transition"
-          >
-            ← Back to Projects
-          </Link>
-        </div>
+
         <section className="flex flex-col">
           <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
           {/* Project */}
