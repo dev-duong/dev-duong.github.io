@@ -21,6 +21,7 @@ import CarbonDroneStatement from "../../assets/projectsPDF/CarbonDroneStatement.
 import MushroomFont from "../../assets/projectsPDF/MushroomFont.pdf";
 import MushroomFontStatement from "../../assets/projectsPDF/MushroomFontStatement.pdf";
 import MushroomLog from "../../assets/projectsPDF/MushroomLog.otf";
+import { type } from "@testing-library/user-event/dist/type";
 
 // Structure of the project data
 // slug: Unique identifier for the project
@@ -333,6 +334,18 @@ const projectsData = [
       "Open Statement PDF →",
       "Download Font →",
     ],
+    status: false,
+  },
+  // Fortnite Map
+  {
+    slug: "Save-The-Realm-Fortnite-Map",
+    category: "Games",
+    title: "Save The Realm [Fortnite Custom Map]",
+    description:
+      "A custom Fortnite map built in Unreal Engine Fortnite using built in mechanics and Verse coding language.",
+    techStack: ["Unreal Engine Fortnite", "Verse"],
+    link: "https://github.com/dev-duong/Save_The_Realm";
+    type: "github",
     status: false,
   },
 ];
