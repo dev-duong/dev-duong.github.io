@@ -21,7 +21,6 @@ import CarbonDroneStatement from "../../assets/projectsPDF/CarbonDroneStatement.
 import MushroomFont from "../../assets/projectsPDF/MushroomFont.pdf";
 import MushroomFontStatement from "../../assets/projectsPDF/MushroomFontStatement.pdf";
 import MushroomLog from "../../assets/projectsPDF/MushroomLog.otf";
-import { type } from "@testing-library/user-event/dist/type";
 
 // Structure of the project data
 // slug: Unique identifier for the project
@@ -300,7 +299,7 @@ const projectsData = [
     techStack: ["Adobe inDesign", "Adobe Photoshop"],
     link: MoreThanHuman,
     type: "pdf",
-    status: false,
+    status: true,
   },
   // Carbon Drone
   {
@@ -314,8 +313,8 @@ const projectsData = [
       { url: CarbonDrone, type: "pdf" },
       { url: CarbonDroneStatement, type: "pdf" },
     ],
-    linkLabel: ["Open Magazine PDF →", "Open Statement PDF →"],
-    status: false,
+    linkLabel: ["Open Magazine PDF", "Open Statement PDF"],
+    status: true,
   },
   // Mushroom Font
   {
@@ -334,7 +333,7 @@ const projectsData = [
       "Open Statement PDF →",
       "Download Font →",
     ],
-    status: false,
+    status: true,
   },
   // Fortnite Map
   {
@@ -344,7 +343,7 @@ const projectsData = [
     description:
       "A custom Fortnite map built in Unreal Engine Fortnite using built in mechanics and Verse coding language.",
     techStack: ["Unreal Engine Fortnite", "Verse"],
-    link: "https://github.com/dev-duong/Save_The_Realm";
+    link: "https://github.com/dev-duong/Save_The_Realm",
     type: "github",
     status: false,
   },

@@ -52,27 +52,46 @@ const ProjectDetailTemplate = ({ project }) => {
 
         <section className="flex flex-col gap-6 my-6">
           {/* Summary */}
-          <Divider title="Summary" />
-          <p className="text-justify">{project.summary}</p>
+          {project.summary && (
+            <>
+              <Divider title="Summary" />
+              <p className="text-justify">{project.summary}</p>
+            </>
+          )}
+
           {/* Motivation */}
-          <Divider title="Motivation" />
-          <p className="text-justify">{project.motivation}</p>
+          {project.motivation && (
+            <>
+              <Divider title="Motivation" />
+              <p className="text-justify">{project.motivation}</p>
+            </>
+          )}
+
           {/* Features */}
-          <Divider title="Features" />
-          <FeaturesList features={project.features} />
+          {project.features && project.features.length > 0 && (
+            <>
+              <Divider title="Features" />
+              <FeaturesList features={project.features} />
+            </>
+          )}
         </section>
-        <section>
-          <Divider title="Figma Prototypes" />
-          <FigmaPrototypes images={project.figures} />
-        </section>
+        {project.figures && project.figures.length > 0 && (
+          <section>
+            <Divider title="Figma Prototypes" />
+            <FigmaPrototypes images={project.figures} />
+          </section>
+        )}
+
+        {project.link && (
+          <section className="flex justify-center">
+            <ProjectLinks
+              link={project.link}
+              linkLabel={project.linkLabel}
+              type={project.type}
+            />
+          </section>
+        )}
       </article>
-      <section className="w-full max-w-4xl mx-auto">
-        <ProjectLinks
-          link={project.link}
-          linkLabel={project.linkLabel}
-          type={project.type}
-        />
-      </section>
     </PageWrapper>
   );
 };
