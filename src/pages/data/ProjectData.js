@@ -229,6 +229,7 @@ const projectsData = [
         alt: "Contact page of the mobile portfolio website",
       },
     ],
+
     status: true,
   },
   // Travel Site
@@ -313,7 +314,6 @@ const projectsData = [
       { url: CarbonDrone, type: "pdf" },
       { url: CarbonDroneStatement, type: "pdf" },
     ],
-    linkLabel: ["Open Magazine PDF", "Open Statement PDF"],
     status: true,
   },
   // Mushroom Font
