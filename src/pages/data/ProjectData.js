@@ -194,7 +194,18 @@ const projectsData = [
     description:
       "A website portfolio built using HTML, and CSS. [Built for only mobile]",
     techStack: ["HTML", "CSS"],
-    link: "https://github.com/dev-duong/Mobile-Website-Portfolio",
+    link: [
+      {
+        url: "https://github.com/dev-duong/Mobile-Website-Portfolio",
+        type: "github",
+      },
+      {
+        url: "https://dev-duong.github.io/mobile-portfolio/",
+        type: "live",
+      },
+    ],
+    linkLabel: ["View GitHub", "View Website"],
+
     type: "github",
 
     summary: `This website is designed to serve as my personal online space where I can present  
