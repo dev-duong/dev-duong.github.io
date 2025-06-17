@@ -1,6 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
+
+import { AnimatePresence, motion } from "framer-motion"; // keep if used
 
 const ProjectList = ({ projects, selectedCategory }) => (
   <article
@@ -18,13 +18,15 @@ const ProjectList = ({ projects, selectedCategory }) => (
         style={{ maxHeight: "70vh" }}
       >
         {projects.map((project) => (
-          <Link
-            key={project.slug}
-            to={`/projects/${project.slug}`}
+          <a
+            key={project.title} // or project.slug if you keep it
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="block no-underline hover:no-underline"
           >
             <ProjectCard {...project} />
-          </Link>
+          </a>
         ))}
       </motion.div>
     </AnimatePresence>
