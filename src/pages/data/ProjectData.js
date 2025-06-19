@@ -1,3 +1,5 @@
+import MushroomPDF from "../../assets/projectsPDF/MushroomFont.pdf";
+
 const projectsData = [
   // Portfolio V2
   {
@@ -67,6 +69,16 @@ const projectsData = [
       "A simple web profile card built using HTML, CSS, and JavaScript. Acts similarly to Linktree.",
     techStack: ["HTML", "CSS", "JavaScript"],
     link: "https://dev-duong.github.io/profile-card/",
+    status: true,
+  },
+  // Mushroom Font
+  {
+    category: "Design",
+    title: "Mushroom Font",
+    description:
+      "A whimsical custom typeface inspired by forest mushrooms and logs, blending organic shapes with playful, earthy charm.",
+    techStack: ["Adobe Ilustrator", "FontForge", "OpenType Font"],
+    link: MushroomPDF,
     status: true,
   },
 ];
