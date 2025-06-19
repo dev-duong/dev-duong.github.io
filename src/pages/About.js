@@ -24,7 +24,7 @@ const About = () => {
         {/* Body */}
         <article
           className="pr-4 custom-scrollbar"
-          style={{ maxHeight: "80vh", overflowY: "auto" }}
+          style={{ maxHeight: "68vh", overflowY: "auto" }}
         >
           <ProfileCard />
           <ExperienceCardSection />
