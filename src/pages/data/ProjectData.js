@@ -1,6 +1,11 @@
 import MushroomFont from "../../assets/projectsPDF/MushroomLog.otf";
 import MushroomPDF from "../../assets/projectsPDF/MushroomFont.pdf";
 
+import DroneMagazine from "../../assets/projectsPDF/CarbonDrone.pdf";
+import DroneStatement from "../../assets/projectsPDF/CarbonDroneStatement.pdf";
+
+import Journal from "../../assets/projectsPDF/RealWorldJournal.pdf";
+
 const projectsData = [
   // Portfolio V2
   {
@@ -24,7 +29,7 @@ const projectsData = [
     title: "Portfolio Website V1",
     year: "2023",
     description:
-      "A Static portfolio website built using HTML and CSS, showcasing my skills [No longer live].",
+      "A Static portfolio website built using HTML and CSS, showcasing my skills.",
     techStack: ["HTML", "CSS", "GitHub Pages"],
     link: "https://dev-duong.github.io/portfolio-v1",
   },
@@ -74,7 +79,7 @@ const projectsData = [
     techStack: ["Adobe Ilustrator", "FontForge", "OpenType Font"],
     links: [
       {
-        label: "Open PDF",
+        label: "View Magazine",
         href: MushroomPDF,
         type: "pdf",
         action: "open",
@@ -84,6 +89,44 @@ const projectsData = [
         href: MushroomFont,
         type: "font",
         action: "download",
+      },
+    ],
+  },
+  // Carbon Drone
+  {
+    category: "Design",
+    title: "Carbon Drone",
+    description:
+      "A forward-thinking speculative design project exploring imaginative futures to challenge current assumptions and inspire innovative possibilities.",
+    techStack: ["Adobe Ilustrator", "Adobe InDesign", "Adobe Photoshop"],
+    links: [
+      {
+        label: "View Magazine",
+        href: DroneMagazine,
+        type: "pdf",
+        action: "open",
+      },
+      {
+        label: "View Statement",
+        href: DroneStatement,
+        type: "pdf",
+        action: "open",
+      },
+    ],
+  },
+  // Real World Journal
+  {
+    category: "Design",
+    title: "Real World Journal",
+    description:
+      "A custom logo designed for a fictional brand, blending imaginative storytelling with visual identity to create a distinctive and engaging mark.",
+    techStack: ["Adobe Ilustrator", "Adobe InDesign", "Adobe Photoshop"],
+    links: [
+      {
+        label: "View PDF",
+        href: Journal,
+        type: "pdf",
+        action: "open",
       },
     ],
   },
