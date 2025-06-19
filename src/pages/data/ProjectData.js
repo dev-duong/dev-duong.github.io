@@ -1,3 +1,4 @@
+import MushroomFont from "../../assets/projectsPDF/MushroomLog.otf";
 import MushroomPDF from "../../assets/projectsPDF/MushroomFont.pdf";
 
 const projectsData = [
@@ -16,8 +17,6 @@ const projectsData = [
       "GitHub Pages",
     ],
     link: "https://dev-duong.github.io/",
-
-    status: true,
   },
   // Portfolio V1
   {
@@ -28,7 +27,6 @@ const projectsData = [
       "A Static portfolio website built using HTML and CSS, showcasing my skills [No longer live].",
     techStack: ["HTML", "CSS", "GitHub Pages"],
     link: "https://dev-duong.github.io/portfolio-v1",
-    status: true,
   },
   // Web Calculator
   {
@@ -39,7 +37,6 @@ const projectsData = [
       "A web-based calculator built using HTML, CSS, and JavaScript, providing basic arithmetic functionality with a user-friendly interface.",
     techStack: ["HTML", "CSS", "JavaScript"],
     link: "https://dev-duong.github.io/calculator",
-    status: true,
   },
   // Portfolio [Mobile]
   {
@@ -49,7 +46,6 @@ const projectsData = [
       "A website portfolio built using HTML, and CSS. [Built for only mobile]",
     techStack: ["HTML", "CSS"],
     link: "https://dev-duong.github.io/mobile-portfolio",
-    status: true,
   },
   // Travel Site
   {
@@ -59,7 +55,6 @@ const projectsData = [
       "A Static portfolio website built using HTML and CSS adhering to the requirements of Web Content Accessibility Guidelines (WCAG)",
     techStack: ["HTML", "CSS"],
     link: "https://dev-duong.github.io/Resposive-Travel-Website",
-    status: true,
   },
   // Linktree
   {
@@ -69,7 +64,6 @@ const projectsData = [
       "A simple web profile card built using HTML, CSS, and JavaScript. Acts similarly to Linktree.",
     techStack: ["HTML", "CSS", "JavaScript"],
     link: "https://dev-duong.github.io/profile-card/",
-    status: true,
   },
   // Mushroom Font
   {
@@ -78,8 +72,20 @@ const projectsData = [
     description:
       "A whimsical custom typeface inspired by forest mushrooms and logs, blending organic shapes with playful, earthy charm.",
     techStack: ["Adobe Ilustrator", "FontForge", "OpenType Font"],
-    link: MushroomPDF,
-    status: true,
+    links: [
+      {
+        label: "Open PDF",
+        href: MushroomPDF,
+        type: "pdf",
+        action: "open",
+      },
+      {
+        label: "Download Font",
+        href: MushroomFont,
+        type: "font",
+        action: "download",
+      },
+    ],
   },
 ];
 
