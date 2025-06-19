@@ -11,6 +11,8 @@ import EducationCardSection from "../components/pageSpecific/aboutPage/Education
 import SkillsSection from "../components/pageSpecific/aboutPage/SkillsSection";
 import ToolsSection from "../components/pageSpecific/aboutPage/ToolsSection";
 import CertificationsSection from "../components/pageSpecific/aboutPage/CertificationsSection";
+import Button from "../components/universal/Button";
+import CV from "../assets/cv/CV.pdf";
 
 const About = () => {
   const skills = ["csharp", "css3", "python", "react", "html5", "tailwindcss"];
@@ -33,6 +35,10 @@ const About = () => {
           </section>
           <CertificationsSection />
         </article>
+        {/* CV */}
+        <section className="flex justify-center mt-7">
+          <Button text="View CV" link={CV} />
+        </section>
 
         {/* Footer */}
         <footer
