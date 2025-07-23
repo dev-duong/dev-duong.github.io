@@ -16,7 +16,7 @@ const Home = () => {
         <article className="h-[calc(100vh-80px)] mt-[-80px] flex items-center justify-center">
           <section className="flex flex-col text-center gap-4">
             <h1 className="text-6xl font-bold whitespace-nowrap">Dat Duong</h1>
-            <Typewriter words={["UI/UX Designer", "Front-End Developer"]} />
+            <Typewriter words={["Web Developer", "UI/UX Designer"]} />
           </section>
         </article>
 
