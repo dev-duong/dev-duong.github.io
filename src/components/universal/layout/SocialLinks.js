@@ -42,7 +42,7 @@ const SocialLinks = ({ size = "sm" }) => {
 
       {/* Mail Link */}
       <a
-        href="mailto:datduong.connect@gmail.com?subject=Your%20Subject&body=Hello%20there!"
+        href="mailto:datduong.contact@gmail.com?subject=Your%20Subject&body=Hello%20there!"
         target="_blank"
         rel="noopener noreferrer"
         className={

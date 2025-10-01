@@ -4,7 +4,7 @@ const Credits = () => (
     <strong>Visual Studio Code</strong> by me.{" "}
     <br className="hidden md:block" />
     Built using <strong>ReactJS</strong> and <strong>TailwindCSS</strong>,
-    deployed using <strong>GitHub Pages</strong>.
+    deployed using <strong>Netlify</strong>.
   </p>
 );
 

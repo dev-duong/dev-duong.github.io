@@ -61,15 +61,6 @@ const projectsData = [
     techStack: ["HTML", "CSS"],
     link: "https://dev-duong.github.io/Resposive-Travel-Website",
   },
-  // Fur Fetch Grooming
-  {
-    category: "Web Development",
-    title: "Fur Fetch Grooming",
-    description:
-      "A responsive website for a local pet grooming service, built using WordPress and Spectra One theme and plugin",
-    techStack: ["WordPress"],
-    link: "https://furfetchgrooming.infinityfree.me",
-  },
   // Linktree
   {
     category: "Web Development",
