@@ -5,10 +5,17 @@ const ExperienceSection = () => (
   <section className="flex flex-col mb-7 gap-7">
     <Divider title="experience" />
     <ExperienceCard
+      date="July 2025 - Present"
+      skills={["HTML", "REACT", "WORDPRESS", "PHP", "SEO"]}
+      company="Jade Finance"
+      location="Varsity Lakes, Gold Coast, QLD"
+      description="As a Web Developer, I build and maintain responsive websites and custom tools using WordPress, PHP, JavaScript, and React. I focus on performance, accessibility, and SEO optimization while integrating analytics and automation tools to enhance business efficiency and user experience."
+    />
+    <ExperienceCard
       date="Mar 2023 - Oct 2023"
-      skills={["HTML", "REACT", "TAILWIND"]}
+      skills={["HTML", "REACT", "TAILWIND", ""]}
       company="TechnologyOne"
-      location="Fortitude Valley, QLD"
+      location="Fortitude Valley, Brisbane, QLD"
       description="As a Lead UX/UI Designer and Consultant, I collaborated on front-end development using HTML, CSS, React.js, and Tailwind. I facilitated client discussions and promoted team collaboration to deliver both mobile and web applications."
     />
     <ExperienceCard
