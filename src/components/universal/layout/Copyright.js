@@ -1,7 +1,7 @@
 const VerticalCopyright = () => {
   return (
-    <div className="fixed top-1/2 right-4 transform -translate-y-1/2 translate-x-1/2 rotate-90 text-gray-400 text-sm tracking-widest pointer-events-none">
-      © 2025 DevDuong. All rights reserved.
+    <div className="fixed text-sm tracking-widest text-gray-400 transform rotate-90 translate-x-1/2 -translate-y-1/2 pointer-events-none top-1/2 right-4">
+      © 6 DevDuong. All rights reserved.
     </div>
   );
 };
